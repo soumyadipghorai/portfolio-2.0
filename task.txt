@@ -1,0 +1,9 @@
+float hero image divs
+add button on nav bar
+add links to keys 
+change color to ig 
+add function to about section image 
+top sections and background images 
+change books section title 
+add svf in hero section
+convert border right in media query (dotted)

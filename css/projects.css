@@ -1,0 +1,39 @@
+.project-section{
+    background-color: #1B1B1B;
+    color: white;
+}
+
+.project-section-text{
+    text-align: center;
+    width: 60%;
+}
+
+.project-section .main-project-button{
+    background-color: transparent ;
+    color: white;
+    border-radius: 30px;
+    border: 2px solid white;
+}
+
+.project-section .project-container{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    row-gap: 4%;
+    column-gap: 1%;
+    grid-auto-rows: minmax(150px, auto);
+    grid-auto-columns: minmax(50px, auto);
+}
+
+.project-section .grid-item{
+    border-radius: var(--borderRadius);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.project-section .main-project{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}

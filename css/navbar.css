@@ -1,0 +1,88 @@
+/* scroll shadow */
+.add-shadow{ 
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    transition: 0.2s ease-in;
+} 
+
+.ai{
+    color: var(--secondaryColor1);
+}
+
+.nav-bar-section{
+    width: 100%;    
+    position: fixed;
+    background-color: white;
+    z-index: 5;
+    margin-top: 0;  
+}
+
+.toggle-button-style{
+    border: none;
+}
+
+.nav-bar-section button:focus{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+nav .nav-element-style{
+    color: var(--fontColor);
+    font-weight: 300;
+    font-size: 1.5vw;
+    text-transform: lowercase;
+    display: inline-block;
+    position: relative;
+}
+
+.nav-element-style:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--secondaryColor1);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.nav-element-style:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+@media only screen and (max-width: 400px) {
+    nav .nav-element-style{
+        font-size: 6vw;
+    }
+}
+@media only screen and (min-width: 400px) {
+    nav .nav-element-style{
+        font-size: 4vw;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    nav .nav-element-style{
+        font-size: 2.6vw;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    nav .nav-element-style{
+        font-size: 2.4vw;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    nav .nav-element-style{
+        font-size: 2vw;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    nav .nav-element-style{
+        font-size: 1.5vw;
+    }
+}

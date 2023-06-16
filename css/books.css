@@ -1,0 +1,21 @@
+.books-section .books-image-section .image-container{
+    border-radius: var(--borderRadius);
+    height: 15rem;
+    width: 10rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid rgb(201, 201, 201);
+}
+
+.scrolling-columns {
+    display: flex;
+}
+.scrolling-column {
+    width: 50%;
+    height: 100vh;
+}
+.scrolling-column img {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+}

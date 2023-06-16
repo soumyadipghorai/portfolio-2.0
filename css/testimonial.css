@@ -1,0 +1,29 @@
+.testimonial-section .testimonial-section-text{
+    text-align: center;
+}
+
+.testimonial-section .testimonial-slider-card{
+    box-shadow: var(--boxShadowStyle);
+    border-radius: var(--borderRadius);
+}
+
+.testimonial-section .info-section .image-section{
+    float: left;
+    position: relative;
+}
+.testimonial-section .info-section .user-dp{
+    vertical-align: bottom;
+    border-radius: 100%;
+}
+
+.testimonial-section .info-section .company{
+    bottom: 0;
+    right: -20%;
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+}

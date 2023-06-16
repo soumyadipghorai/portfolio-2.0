@@ -1,0 +1,18 @@
+.scroll-down .scroll-down-text{
+    text-align: center;
+}
+
+.scroll-down .scroller-container {
+    position: relative;
+}
+
+.scroll-down .circle{
+    position: absolute;
+    top: 18%;
+    left: 10%;
+}
+
+.scroll-down .scroll-arrow{
+    position: absolute;
+    left: 10%;
+}

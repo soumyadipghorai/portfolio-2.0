@@ -1,0 +1,16 @@
+.areas-of-interest-section .areas-of-interest-card{
+    border: 1px solid;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.areas-of-interest-text{
+    text-align: center;
+}
+
+@media only screen and (max-width: 992px) {
+    .areas-of-interest-section .col{
+        height: 80%;
+    }
+}
+    

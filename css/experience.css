@@ -1,0 +1,111 @@
+.experience .hero-experience-card{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    border-radius: 10px;
+}
+
+.experience .view-project-button{
+    color: white;
+    background-color: transparent;
+    border: solid 2px white;
+    border-radius: 100px;
+}
+
+.experience .education-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 4%;
+    column-gap: 2%;
+    grid-auto-rows: minmax(150px, auto);
+    grid-auto-columns: minmax(50px, auto);
+}
+    .experience .education-details{
+        border-radius: var(--borderRadius);
+        height: 200px;
+        color: white;
+        display: flex;
+        align-items: end;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .experience .education-details h4, .credentials-button{
+        opacity: 0;
+    }
+        .experience .education-details:hover .credentials-button{
+            opacity: 1;
+            transform: translateY(20%);
+            transition: 0.3s linear;
+        }
+        .experience .education-details:hover h4{
+            opacity: 1;
+            transform: translateY(20%);
+            transition: 0.3s linear;
+        }
+    .experience .credentials-button{
+        background-color: transparent;
+        border-radius: 30px;
+        color: white;
+        border: 1px solid white;
+        text-transform: capitalize;
+    }
+
+.experience .experience-text{
+    text-align: center;
+}
+
+/* <slider animation>  */
+@keyframes slide{
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.experience .logos{
+    overflow: hidden;
+    background-color: white;
+    white-space: nowrap; /* bring all logos in the same line */
+    box-shadow: var(--boxShadowStyle);
+    position: relative;
+    width: 60%;
+    border-radius: var(--borderRadius);
+}
+
+.experience .logos:before, 
+.experience .logos:after {
+    position: absolute;
+    top: 0;
+    width: 10%;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+
+.experience .logos:before{
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.experience .logos:after{
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.experience .logos-slide{
+    display: inline-block;
+    animation: 25s slide infinite linear;
+}
+
+.experience .logos:hover .logos-slide{
+    animation-play-state: paused;
+}
+.experience .logos-slide img{
+    height: 50px;
+    margin: 0 40px;
+}
+/* </slider animation>  */
