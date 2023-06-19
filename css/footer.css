@@ -1,0 +1,24 @@
+.footer-section h2{
+    color: white;
+}
+    .footer-section .footer-highlight{
+        color: var(--secondaryColor1);
+    }
+
+.footer-section address, .copyright{
+    display: flex;
+    color: white;
+}
+
+.developer-section{
+    text-align: center;
+    color: white;
+}
+
+.footer-section .get-connected-button{
+    background-color: transparent;
+    color: white;
+    text-transform: capitalize;
+    border: 1px solid white;
+    border-radius: 30px;
+}
