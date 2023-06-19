@@ -7,3 +7,5 @@ top sections and background images
 change books section title 
 add svf in hero section
 convert border right in media query (dotted)
+start slider only when visited 
+background position %

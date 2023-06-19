@@ -23,12 +23,12 @@ function duplicateExperience() {
     document.querySelector('.logos').appendChild(logos);
 
     // for gallery row-1
-    let upperRow = document.querySelector('#galleryUpperRow').cloneNode(true);
-    document.querySelector('.upper-row').appendChild(upperRow);
+    // let upperRow = document.querySelector('#galleryUpperRow').cloneNode(true);
+    // document.querySelector('.upper-row').appendChild(upperRow);
 
-    // for gallery row-2
-    let lowerRow = document.querySelector('#galleryLowerRow').cloneNode(true);
-    document.querySelector('.lower-row').appendChild(lowerRow);
+    // // for gallery row-2
+    // let lowerRow = document.querySelector('#galleryLowerRow').cloneNode(true);
+    // document.querySelector('.lower-row').appendChild(lowerRow);
 }
 
 window.addEventListener('scroll', function() {
