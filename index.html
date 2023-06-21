@@ -30,6 +30,7 @@
     <link rel="stylesheet" href="css/about.css" type="text/css">
     <link rel="stylesheet" href="css/books.css" type="text/css">
     <link rel="stylesheet" href="css/skills.css" type="text/css">
+    <link rel="stylesheet" href="css/accordion.css" type="text/css">
     <link rel="stylesheet" href="css/gallery.css" type="text/css">
     <link rel="stylesheet" href="css/explore.css" type="text/css">
     <link rel="stylesheet" href="css/querries.css" type="text/css">
@@ -603,6 +604,111 @@
             </div>
         </section>
 
+        <!-- ############## accordion section ############## -->
+        <section class="accordion-section py-5">
+            <div class="row">
+                <div class="col-6">
+                    <ul class="accordion-container">
+                        <li class="accordion-list-item py-2">
+                            <input type="radio" onclick='changeDropIcon()' name="accordion-input" class="accordion-drop-down-radio-button" id="first-querry" checked>
+                            <label for="first-querry">
+                                <img src="images/iconpack/accordion-arrow-down.svg" alt="" class="mr-3 accordionDropDown" id="accordionDropDown">
+                                <h4>
+                                    What is the expected response time for inquiries?
+                                </h4>
+                            </label>
+                            <div class="accordion-content">
+                                <p>Generally, I aim to reply within a week, with typical response times ranging from 2-3 days depending on my workload. However, please if I am on vacation or in an area with limited network coverage, it may take a little longer to get back to you.</p>
+                            </div>
+                        </li>
+                        <li class="accordion-list-item py-2">
+                            <input type="radio" onclick="changeDropIcon()" name="accordion-input" class="accordion-drop-down-radio-button" id="second-querry">
+                            <label for="second-querry">
+                                <img src="images/iconpack/accordion-arrow-right.svg" alt="" class="mr-3 accordionDropDown" id="accordionDropDown">
+                                <h4>
+                                    Which domains am I interested in working in the future?
+                                </h4>
+                            </label>
+                            <div class="accordion-content">
+                                <p>In terms of future domains, I have a strong interest in tech, healthcare, finance, and e-commerce. I am particularly drawn to working with fast-growing startups or taking on high-impact roles within established organizations.</p>
+                            </div>
+                        </li>
+                        <li class="accordion-list-item py-2">
+                            <input type="radio" onclick="changeDropIcon()" name="accordion-input" class="accordion-drop-down-radio-button" id="third-querry">
+                            <label for="third-querry">
+                                <img src="images/iconpack/accordion-arrow-right.svg" alt="" class="mr-3 accordionDropDown" id="accordionDropDown">
+                                <h4>
+                                    Why is a dashboard essential for any business?
+                                </h4>
+                            </label>
+                            <div class="accordion-content">
+                                <p> Dashboards serve as powerful tools for visualizing and interpreting complex business data. For example, in the finance industry, a dashboard can provide real-time insights into financial performance, portfolio management, and risk analysis.</p>
+                                <a href="" target="_blank">
+                                    <button class="accordion-content-learn-more px-3 py-0 my-1">
+                                        Learn More 
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                                        </svg>
+                                    </button>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="accordion-list-item py-2">
+                            <input type="radio" onclick="changeDropIcon()" name="accordion-input" class="accordion-drop-down-radio-button" id="fourth-querry">
+                            <label for="fourth-querry">
+                                <img src="images/iconpack/accordion-arrow-right.svg" alt="" class="mr-3 accordionDropDown" id="accordionDropDown">
+                                <h4>
+                                    What are some of the problems that can be solved using data science?
+                                </h4>
+                            </label>
+                            <div class="accordion-content">
+                                <p>Data science can be applied to various domains. For instance, in retail, data science can be used to optimize inventory, forecast demand, personalize customer recommendations. In transportation, data science helps with route optimization, fleet management etc.</p>
+                                <a href="" target="_blank">
+                                    <button class="accordion-content-learn-more px-3 py-0 my-1">
+                                        Learn More 
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                                        </svg>
+                                    </button>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="accordion-list-item py-2">
+                            <input type="radio" onclick="changeDropIcon()" name="accordion-input" class="accordion-drop-down-radio-button" id="fifth-querry">
+                            <label for="fifth-querry">
+                                <img src="images/iconpack/accordion-arrow-right.svg" alt="" class="mr-3 accordionDropDown" id="accordionDropDown">
+                                <h4>
+                                    Which problems usually cannot be addressed through data science?
+                                </h4>
+                            </label>
+                            <div class="accordion-content">
+                                <p>While data science is a powerful tool, there are challenges it may not address alone. For example, complex ethical dilemmas, Creative problem-solving, innovation, and artistic endeavors typically rely on human intuition, imagination, and subjective judgment.</p>
+                                <a href="" target="_blank">
+                                    <button class="accordion-content-learn-more px-3 py-0 my-1">
+                                        Learn More 
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                                        </svg>
+                                    </button>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6">
+                    <div class="flex-wrapper">
+                        <div class="image-container border p-5" style="
+                            background: linear-gradient(0deg, rgba(2, 2, 2, 0.312), rgba(2, 2, 2, 0.314)), url('images/accordion/hero-image-1.jpg');
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: cover;">
+                        <h2 class="mt-3 mb-5 ml-4">innovate with data science</h2>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- ############## gallery ############## -->
         <section class="gallery-section mt-5">
             <div class="flex-wrapper mt-5">
@@ -665,46 +771,8 @@
                 </div>
             </div>
         </section>
-
-        <!-- <section class="querries-section">
-            <div class="accordion-container">
-                <div class="accordion accordion-flush" id="accordionFlushExample">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                <h2>1. Some general problems that can be solved using data science?</h2>
-                            </button>
-                        </h2>
-                        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">
-                                Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                            <h2>2. Problems that typically can't be solved using Data Science?</h2>
-                            </button>
-                        </h2>
-                        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                            <h3>3. Why do you need a dashboard for your business?</h3>
-                            </button>
-                        </h2>
-                        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
     </div>
+
     <footer style="background-color: var(--primaryColor);
     width: 100%;">
         <section class="footer-section">

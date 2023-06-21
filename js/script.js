@@ -1,11 +1,12 @@
 function runAll() {
     modifyBorder_experience();
     duplicateExperience();
+    // changeDropIcon();
 }
 
 function modifyBorder_experience() {
     var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
-    console.log(width); 
+    // console.log(width); 
 
     if (width < 995){
         var textSection = document.getElementsByClassName('text-wrapper');
@@ -21,14 +22,18 @@ function duplicateExperience() {
     // for logos slider 
     let logos = document.querySelector('.logos-slide').cloneNode(true);
     document.querySelector('.logos').appendChild(logos);
+}
 
-    // for gallery row-1
-    // let upperRow = document.querySelector('#galleryUpperRow').cloneNode(true);
-    // document.querySelector('.upper-row').appendChild(upperRow);
-
-    // // for gallery row-2
-    // let lowerRow = document.querySelector('#galleryLowerRow').cloneNode(true);
-    // document.querySelector('.lower-row').appendChild(lowerRow);
+function changeDropIcon() {
+    var accordionItems = document.getElementsByClassName('accordion-list-item');
+    for (let i = 0; i < accordionItems.length; i++){
+        if (accordionItems[i].getElementsByClassName('accordion-drop-down-radio-button')[0].checked){
+            accordionItems[i].getElementsByClassName("accordionDropDown")[0].src = "images/iconpack/accordion-arrow-down.svg";
+        }
+        else {
+            accordionItems[i].getElementsByClassName("accordionDropDown")[0].src = "images/iconpack/accordion-arrow-right.svg";
+        }
+    }
 }
 
 window.addEventListener('scroll', function() {
@@ -38,7 +43,7 @@ window.addEventListener('scroll', function() {
     var sectionOffsetTop = section.offsetTop;
     var sectionHeight = section.offsetHeight;
     var windowScrollTop = window.pageYOffset;
-    console.log(windowScrollTop, sectionOffsetTop);
+    // console.log(windowScrollTop, sectionOffsetTop);
     var windowHeight = window.innerHeight;
 
     var scrollTriggerOffset = 0; // Adjust this value as needed

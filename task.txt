@@ -9,3 +9,11 @@ add svf in hero section
 convert border right in media query (dotted)
 start slider only when visited 
 background position %
+fix margins and paddings 
+
+questions for accordion 
+    avg reply time 
+    domains in which I wish to work in 
+    why you need a dashboard for your business 
+    problems that can be solved using data science 
+    problems that can't be solved using data science 
