@@ -23,6 +23,13 @@
     box-sizing: border-box;
 }
 
+.section-subtitle{
+    color : var(--secondaryColor1);
+    text-transform: uppercase;
+    font-weight : 350;
+    font-size : x-large;
+}
+
 .flex-wrapper{
     display: flex;
     justify-content: center;

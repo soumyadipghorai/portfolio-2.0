@@ -42,11 +42,12 @@
     <script defer type="text/javascript" src="js/auto_typer.js"></script>
     <script defer type="text/javascript" src="js/scroll.js"></script>
 
+    <!-- bootstrap  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    <!-- <script defer src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script> -->
 
+    <!-- lottie animation  -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
@@ -89,14 +90,15 @@
 
         <!-- ############## hero section ############## -->
         <section class="hero-section" id="herosection">
-            <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center">
-                <div class="col-lg-6 p-6 p-lg-6 pt-lg-6 ">
+            <!-- <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_OJ6bhCLTj0.json"  background="transparent"  speed="1"  style="width: 150px; height: 150px;"  loop autoplay class="lottie-player"></lottie-player> -->
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center hero-section-container">
+                <div class="col-lg-6 p-6 p-lg-6 pt-lg-6 text-wrapper">
                     <h3 class="section-subtitle mt-lg-4 mt-md-5 mt-sm-5">Innovate, Analyze, Impact</h3>
                     <h1 class="fw-bold lh-1 text-body-emphasis section-title">Unleashing Data's Potential using
-                            <a href="" class="typewrite" data-period="2000" data-type='["Data Science", "Data Analystics", "Data Storytelling"]'>
-                                <span class="wrap">Data Science</span>
-                            </a>
-                        </h1>
+                        <a href="" class="typewrite" data-period="2000" data-type='["Data Science", "Data Analystics", "Data Storytelling"]'>
+                            <span class="wrap">Data Science</span>
+                        </a>
+                    </h1>
                     <p class="lead">Fueling Innovation Through Advanced Analytics. Uncover hidden patterns and make data-driven decisions that propel your business forward. Contact Me to unlock your data's true potential.</p>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3 mt-5">
                         <button type="button" class="btn-lg px-4 contact-button">
@@ -710,7 +712,7 @@
         </section>
 
         <!-- ############## gallery ############## -->
-        <section class="gallery-section mt-5">
+        <section class="gallery-section my-5">
             <div class="flex-wrapper mt-5">
                 <div class="gallery-section-text">
                     <h2>Moments Captured, Memories Shared.</h2>
@@ -725,11 +727,9 @@
                     <img src="images/gallery/row-1-3.png" alt="" loading="lazy">
                     <img src="images/gallery/row-1-4.png" alt="" loading="lazy">
                     <img src="images/gallery/row-1-5.jpg" alt="" loading="lazy">
-                    <img src="images/gallery/row-1-1.png" alt="" loading="lazy">
-                    <img src="images/gallery/row-1-2.png" alt="" loading="lazy">
-                    <img src="images/gallery/row-1-3.png" alt="" loading="lazy">
-                    <img src="images/gallery/row-1-4.png" alt="" loading="lazy">
-                    <img src="images/gallery/row-1-5.jpg" alt="" loading="lazy">
+                    <img src="images/gallery/row-2-7.jpg" alt="" loading="lazy">
+                    <img src="images/gallery/row-2-8.jpg" alt="" loading="lazy">
+                    <img src="images/gallery/row-2-9.jpg" alt="" loading="lazy">
                 </div>
                 <div class="image-slider" id="galleryUpperRow">
                     <img src="images/gallery/row-1-1.png" alt="" loading="lazy">
@@ -737,25 +737,19 @@
                     <img src="images/gallery/row-1-3.png" alt="" loading="lazy">
                     <img src="images/gallery/row-1-4.png" alt="" loading="lazy">
                     <img src="images/gallery/row-1-5.jpg" alt="" loading="lazy">
-                    <img src="images/gallery/row-1-1.png" alt="" loading="lazy">
-                    <img src="images/gallery/row-1-2.png" alt="" loading="lazy">
-                    <img src="images/gallery/row-1-3.png" alt="" loading="lazy">
-                    <img src="images/gallery/row-1-4.png" alt="" loading="lazy">
-                    <img src="images/gallery/row-1-5.jpg" alt="" loading="lazy">
+                    <img src="images/gallery/row-2-7.jpg" alt="" loading="lazy">
+                    <img src="images/gallery/row-2-8.jpg" alt="" loading="lazy">
+                    <img src="images/gallery/row-2-9.jpg" alt="" loading="lazy">
                 </div>
             </div>
-            <div class="lower-row py-3 m-3" id="galleryLowerRow">
+            <div class="lower-row py-3 mb-5" id="galleryLowerRow">
                 <div class="image-slider">
                     <img src="images/gallery/row-2-1.jpg" alt="" loading="lazy">
                     <img src="images/gallery/row-2-2.jpg" alt="" loading="lazy">
                     <img src="images/gallery/row-2-3.jpg" alt="" loading="lazy">
                     <img src="images/gallery/row-2-4.jpg" alt="" loading="lazy">
                     <img src="images/gallery/row-2-6.jpg" alt="" loading="lazy">
-                    <img src="images/gallery/row-2-1.jpg" alt="" loading="lazy">
-                    <img src="images/gallery/row-2-2.jpg" alt="" loading="lazy">
-                    <img src="images/gallery/row-2-3.jpg" alt="" loading="lazy">
-                    <img src="images/gallery/row-2-4.jpg" alt="" loading="lazy">
-                    <img src="images/gallery/row-2-6.jpg" alt="" loading="lazy">
+                    <img src="images/gallery/row-2-12.jpg" alt="" loading="lazy">
                 </div>
                 <div class="image-slider">
                     <img src="images/gallery/row-2-1.jpg" alt="" loading="lazy">
@@ -763,15 +757,30 @@
                     <img src="images/gallery/row-2-3.jpg" alt="" loading="lazy">
                     <img src="images/gallery/row-2-4.jpg" alt="" loading="lazy">
                     <img src="images/gallery/row-2-6.jpg" alt="" loading="lazy">
-                    <img src="images/gallery/row-2-1.jpg" alt="" loading="lazy">
-                    <img src="images/gallery/row-2-2.jpg" alt="" loading="lazy">
-                    <img src="images/gallery/row-2-3.jpg" alt="" loading="lazy">
-                    <img src="images/gallery/row-2-4.jpg" alt="" loading="lazy">
-                    <img src="images/gallery/row-2-6.jpg" alt="" loading="lazy">
+                    <img src="images/gallery/row-2-12.jpg" alt="" loading="lazy">
                 </div>
             </div>
         </section>
     </div>
+    <section class="explore-section p-4 mt-5" style="
+    background : linear-gradient(0deg, var(--primaryColor), rgba(2, 2, 2, 0.314)),url('https://images.unsplash.com/photo-1490730141103-6cac27aaab94?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+    background-repeat: no-repeat;
+    background-position: 0% 45%;
+    background-size: cover;" >
+    <div class="flex-wrapper">
+        <div class="text-area mt-5 m-4">
+            <h2>Explore the Nature </h2>
+            <h3 class="section-subtitle">ESPECIALLY MOUNTAINS: My Heart's Majestic Home. </h3>
+            <p>Embark on a visual journey through captivating landscapes, captured by my lens. Explore nature's breathtaking beauty through my lens</p>
+        </div>
+    </div>
+    <div class="button-area mb-5">
+        <button class="explore-button px-3 py-1">
+            Explore 
+            <img src="images/iconpack/white-arrow.svg" alt="">
+        </button>
+    </div>
+    </section>
 
     <footer style="background-color: var(--primaryColor);
     width: 100%;">

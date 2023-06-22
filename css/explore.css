@@ -1,5 +1,16 @@
-.explore-section{
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
+.explore-section .text-area{
+    width: 55%;
+    text-align: center;
+    color: white;
+}   
+
+.explore-section .button-area{
+    display: flex;
+    justify-content: center;
+}   
+    .explore-section .button-area .explore-button{
+        background-color: transparent;
+        border: 1px solid white;
+        border-radius: 30px;
+        color: white;
+    }   
