@@ -27,10 +27,11 @@
 nav .nav-element-style{
     color: var(--fontColor);
     font-weight: 300;
-    font-size: 1.5vw;
+    font-size: 1.4vw;
     text-transform: lowercase;
     display: inline-block;
     position: relative;
+    text-transform: capitalize;
 }
 
 .nav-element-style:after {
@@ -51,6 +52,16 @@ nav .nav-element-style{
     transform-origin: bottom left;
 }
 
+.nav-bar-section .nav-bar-contact-button{
+    background-color: var(--primaryColor);
+    color: white;
+    border-radius: 5px;
+    border: 1px solid var(--primaryColor);
+    font-weight: 200;
+}
+    .nav-bar-section .nav-bar-contact-button:hover{
+        color: white;
+    }
 
 @media only screen and (max-width: 400px) {
     nav .nav-element-style{

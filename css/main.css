@@ -23,6 +23,10 @@
     box-sizing: border-box;
 }
 
+.main-content{
+    width: 100%;
+}
+
 .section-subtitle{
     color : var(--secondaryColor1);
     text-transform: uppercase;
@@ -94,4 +98,12 @@
         transform: translateX(0);
         opacity: 1;
     }
+}
+
+#preloader{
+    height: 100vh;
+    width: 100%;
+    position: fixed; 
+    z-index: 100;
+    overflow: hidden;
 }

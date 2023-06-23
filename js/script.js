@@ -1,9 +1,16 @@
 function runAll() {
-    modifyBorder_experience();
+    // modifyBorder_experience();
     duplicateExperience();
     // changeDropIcon();
 }
 
+// prealoader 
+var loader = document.getElementById('preloader'); 
+window.addEventListener("load", function(){
+    loader.style.display = "none";
+})
+
+// modify border --> areas of interest 
 function modifyBorder_experience() {
     var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
     // console.log(width); 
@@ -18,12 +25,14 @@ function modifyBorder_experience() {
     }
 }
 
+// image duplicate --> prev experience 
 function duplicateExperience() {
     // for logos slider 
     let logos = document.querySelector('.logos-slide').cloneNode(true);
     document.querySelector('.logos').appendChild(logos);
 }
 
+// drop down icon change 
 function changeDropIcon() {
     var accordionItems = document.getElementsByClassName('accordion-list-item');
     for (let i = 0; i < accordionItems.length; i++){
@@ -36,6 +45,7 @@ function changeDropIcon() {
     }
 }
 
+// books scroller 
 window.addEventListener('scroll', function() {
     var scrollingColumns = document.querySelector('.scrolling-columns');
     var section = document.querySelector('.books-section');
@@ -53,4 +63,26 @@ window.addEventListener('scroll', function() {
     } else {
         scrollingColumns.style.transform = 'translateY(0)';
     }
+});
+
+// auto increment hero-section 
+const counters = document.querySelectorAll('.counter');
+const speed = 150;
+
+counters.forEach( counter => {
+   const animate = () => {
+      const value = +counter.getAttribute('data-target');
+      const data = +counter.innerText;
+     
+      const time = value / speed;
+     if(data < value) {
+          counter.innerText = Math.ceil(data + time);
+          setTimeout(animate, 1);
+        }else{
+          counter.innerText = value;
+        }
+     
+   }
+   
+   animate();
 });

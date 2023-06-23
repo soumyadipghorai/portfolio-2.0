@@ -2,6 +2,10 @@
     position: relative;
 }
 
+.hero-section .hero-image{
+    max-width: 90%;
+}
+
 /* .hero-section .lottie-player{
     position: absolute;
     left: 2%;
@@ -35,6 +39,72 @@
         text-decoration: none;
     }
 
+.hero-section .image-container{
+    position: relative;
+}
+
+.hero-section .image-container .linkedIn{
+    height: 22%;
+    width: 20%;
+    z-index: 3;
+    top: 92%;
+    left: 14%;
+    position: absolute;
+    background-color: var(--primaryColor);
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+    .counter{
+        font-weight: 700;
+    }
+
+@media only screen and (max-width: 1251px) {
+    .hero-section .image-container .linkedIn{
+        left: 11%;
+        width: 21%;
+    }
+}
+@media only screen and (max-width: 1110px) {
+    .hero-section .image-container .linkedIn{
+        left: 8%;
+        width: 22%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .hero-section .image-container .linkedIn{
+        left: 24%;
+        width: 14%;
+    }
+}
+
+@media only screen and (max-width: 870px) {
+    .hero-section .image-container .linkedIn{
+        left: 20%;
+        width: 16%;
+    }
+}
+@media only screen and (max-width: 740px) {
+    .hero-section .image-container .linkedIn{
+        left: 16%;
+        width: 18%;
+        height: 25%;
+    }
+}
+@media only screen and (max-width: 650px) {
+    .hero-section .image-container .linkedIn{
+        left: 11%;
+        width: 20%;
+    }
+}
+@media only screen and (max-width: 570px) {
+    .hero-section .image-container .linkedIn{
+        left: 11%;
+        width: 20%;
+    }
+}
+
 @media only screen and (max-width: 576px) {
     .hero-section .section-subtitle{
         margin-top: 14%;
@@ -42,8 +112,8 @@
 }
 
 @media only screen and (max-width: 528px) {
-    .hero-image{
-        width: 100%;
+    .hero-section .hero-image{
+        max-width: 100%;
     }
 }
     

@@ -4,8 +4,9 @@
     background-repeat: no-repeat;
 }
 
-.areas-of-interest-text{
+.areas-of-interest-text, .areas-of-interest-section .text-wrapper{
     text-align: center;
+    width: 80%;
 }
 
 @media only screen and (max-width: 992px) {

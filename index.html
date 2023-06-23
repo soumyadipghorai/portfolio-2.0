@@ -63,23 +63,37 @@
 </head>
 <body onload="runAll()">
 
+    <div class="preloader" id="preloader" style="
+        background: white url('images/preloader.gif') center no-repeat;
+        background-size: 25%;">
+
+    </div>
+
     <!-- ############## navbar ############## -->
     <section class="nav-bar-section" id="navbar" style="margin-bottom: 4%;">
         <div class="container-xxl">
-            <nav class="navbar navbar-expand-md navbar-container">
-                <a href="index.html" class="navbar-brand ms-2">
+            <nav class="navbar navbar-expand-md navbar-container py-2 px-0">
+                <a href="index.html" class="navbar-brand ml-sm-0 ml-md-4">
                     <span>ghor<b class="ai">Ai</b></span>
                 </a>
                 <button class="navbar-toggler toggle-button-style" type="button" data-toggle="collapse" data-target="#toggleCollapse" aria-expanded="false" aria-controls="toggleCollapse"> 
                     <img src="images/toggle-menu-icon.png" alt="toggle-icon" height="25px" width="25px">
                 </button>
-                <div class="container-xxl">
+                <div class="container-xxl px-0">
                     <div class="collapse navbar-collapse text-center justify-content-end" id="toggleCollapse">
                         <ul class="navbar-nav">
+                            <li><a href="#contact" class="nav-link nav-element-style mr-lg-4 mr-md-4">Home</a></li>
                             <li><a href="#herosection" class="nav-link nav-element-style mr-lg-4 mr-md-4">Work</a></li>
                             <li><a href="#about" class="nav-link nav-element-style mr-lg-4 mr-md-4">About</a></li>
-                            <li><a href="#contact" class="nav-link nav-element-style mr-lg-4 mr-md-4">Contact</a></li>
                             <li><a href="#gallery" class="nav-link nav-element-style mr-lg-4 mr-md-4">Gallery</a></li>
+                            <li class="button-container">
+                                <button class="nav-bar-contact-button px-3 py-1 nav-link nav-element-style mr-lg-4 mr-md-4">
+                                    contact
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                                    </svg>
+                                </button>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -91,10 +105,10 @@
         <!-- ############## hero section ############## -->
         <section class="hero-section" id="herosection">
             <!-- <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_OJ6bhCLTj0.json"  background="transparent"  speed="1"  style="width: 150px; height: 150px;"  loop autoplay class="lottie-player"></lottie-player> -->
-            <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center hero-section-container">
-                <div class="col-lg-6 p-6 p-lg-6 pt-lg-6 text-wrapper">
+            <div class="row px-sm-0 px-md-4 py-4 pb-0 pe-lg-0 pt-lg-5 align-items-center hero-section-container">
+                <div class="col-md-6 p-6 p-lg-6 pt-lg-6 text-wrapper">
                     <h3 class="section-subtitle mt-lg-4 mt-md-5 mt-sm-5">Innovate, Analyze, Impact</h3>
-                    <h1 class="fw-bold lh-1 text-body-emphasis section-title">Unleashing Data's Potential using
+                    <h1 class="fw-bold lh-1 text-body-emphasis section-title">Unleashing Data's Potential <br>using
                         <a href="" class="typewrite" data-period="2000" data-type='["Data Science", "Data Analystics", "Data Storytelling"]'>
                             <span class="wrap">Data Science</span>
                         </a>
@@ -110,8 +124,23 @@
                         <button type="button" class="btn-lg px-4 resume-button">Resume</button>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <img class="rounded-lg-3 mx-auto d-block mt-lg-5 mt-md-5 hero-image" src="images/hero-image.png" alt="" width="480" loading="lazy">
+                <div class="col-md-6 image-container">
+                    <img class="rounded-lg-3 mx-auto d-block mt-lg-5 mt-md-5 hero-image" src="images/hero-image.png" alt="" width="570" loading="lazy">
+                    <!-- <div class="linkedIn p-3">
+                        <div class="counter" data-target="8000">0</div>
+                        <p class="mb-1">followers</p>
+                        <img src="images/logo/linkedIn.png" alt="" height="20px" class=""> 
+                    </div> -->
+                    <!-- <div class="linkedIn p-3">
+                        <div class="counter" data-target="8000">0</div>
+                        <p class="mb-1">followers</p>
+                        <img src="images/logo/linkedIn.png" alt="" height="20px" class=""> 
+                    </div>
+                    <div class="linkedIn p-3">
+                        <div class="counter" data-target="8000">0</div>
+                        <p class="mb-1">followers</p>
+                        <img src="images/logo/linkedIn.png" alt="" height="20px" class=""> 
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -133,11 +162,12 @@
             </div>
             <div class="align-items-stretch p-4 m-0 container-xxl">
                 <div class="row g-4 row-cols-1 row-cols-lg-3">
-                    <div class="feature col">
-                        <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+                    <div class="feature col mt-0">
+                        <!-- <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
                             <img src="images/iconpack/programming.svg" alt="programming-icon" loading="lazy">
-                        </div>
-                        <div class="border-right text-wrapper">
+                        </div> -->
+                        <div class="text-wrapper">
+                            <img src="images/iconpack/programming.svg" alt="programming-icon" loading="lazy">
                             <h3 class="fs-2 text-body-emphasis">Programming</h3>
                             <p>Full-stack data wizard with expertise in Python, SQL, HTML, CSS, and web development using Flask and Django.</p>
                             <a href="#" class="icon-link">
@@ -146,11 +176,12 @@
                             </a>
                         </div>
                     </div>
-                    <div class="feature col">
-                        <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+                    <div class="feature col mt-0">
+                        <!-- <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
                             <img src="images/iconpack/ai-ml.svg" alt="ai-ml-icon" loading="lazy">
-                        </div>
-                        <div class="border-right text-wrapper">
+                        </div> -->
+                        <div class="text-wrapper">
+                            <img src="images/iconpack/ai-ml.svg" alt="ai-ml-icon" loading="lazy">
                             <h3 class="fs-2 text-body-emphasis">AI & ML</h3>
                             <p>ML expert skilled in NLP, DL, and Time Series analysis, delivering impactful projects with diverse algorithms.</p>
                             <a href="#" class="icon-link">
@@ -159,16 +190,19 @@
                             </a>
                         </div>
                     </div>
-                    <div class="feature col">
-                        <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+                    <div class="feature col mt-0">
+                        <!-- <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
                             <img src="images/iconpack/tools-and-tech.svg" alt="tools-and-tech-icon" loading="lazy">
+                        </div> -->
+                        <div class="text-wrapper">
+                            <img src="images/iconpack/tools-and-tech.svg" alt="tools-and-tech-icon" loading="lazy">
+                            <h3 class="fs-2 text-body-emphasis">Tools and tech</h3>
+                            <p>Master of Data Tools: Tableau, Excel, PowerBI, Data Studio, Azure, AWS—empowering data-driven insights.</p>
+                            <a href="#" class="icon-link">
+                                Explore
+                                <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+                            </a>
                         </div>
-                        <h3 class="fs-2 text-body-emphasis">Tools and tech</h3>
-                        <p>Master of Data Tools: Tableau, Excel, PowerBI, Data Studio, Azure, AWS—empowering data-driven insights.</p>
-                        <a href="#" class="icon-link">
-                            Explore
-                            <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
-                        </a>
                     </div>
                 </div>
             </div>
@@ -387,7 +421,7 @@
         </section>
 
         <!-- ############## contact section ############## -->
-        <section class="contact-section mt-5">
+        <!-- <section class="contact-section mt-5">
             <div style="display: flex;">
                 <div class="full-time-section p-4" style="
                     background: linear-gradient(269.32deg, #1C1B1F 0.57%, rgba(24, 23, 26, 0.850677) 6.62%, rgba(0, 0, 0, 0) 97.71%), url('images/contact/contact-section-image.jpg');
@@ -459,7 +493,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <!-- ############## scroll down ############## -->
         <section class="scroll-down mt-5">
@@ -553,8 +587,8 @@
         </section>
 
         <!-- ############## books ############## -->
+        <!-- https://codepen.io/zacharilius/pen/NGwrgZ -->
         <section class="books-section mt-5">
-            <!-- https://codepen.io/zacharilius/pen/NGwrgZ -->
             <div class="row">
                 <div class="books-text-section col-8 align-self-center">
                     <div class="col-8">
@@ -587,10 +621,10 @@
         <!-- ############## skills section ##############  -->
         <section class="skills-section mt-5 mb-5">
             <div class="row">
-                <div class="col-6 skills-section-hero-image">
+                <div class="col-md-6 skills-section-hero-image">
                     <img src="images/skills/main_skills.png" alt="" width="350px" class="ml-5" loading="lazy">
                 </div>
-                <div class="col-6 skills-section-text align-self-center">
+                <div class="col-md-6 skills-section-text align-self-center">
                     <div class="text-wrapper mb-5">
                         <h2>Tools I Embrace and Explore</h2>
                         <h3 class="section-subtitle">Skills & Tools, Fueling Innovation</h3>
@@ -750,6 +784,7 @@
                     <img src="images/gallery/row-2-4.jpg" alt="" loading="lazy">
                     <img src="images/gallery/row-2-6.jpg" alt="" loading="lazy">
                     <img src="images/gallery/row-2-12.jpg" alt="" loading="lazy">
+                    <img src="images/gallery/row-2-13.jpg" alt="" loading="lazy">
                 </div>
                 <div class="image-slider">
                     <img src="images/gallery/row-2-1.jpg" alt="" loading="lazy">
@@ -758,6 +793,7 @@
                     <img src="images/gallery/row-2-4.jpg" alt="" loading="lazy">
                     <img src="images/gallery/row-2-6.jpg" alt="" loading="lazy">
                     <img src="images/gallery/row-2-12.jpg" alt="" loading="lazy">
+                    <img src="images/gallery/row-2-13.jpg" alt="" loading="lazy">
                 </div>
             </div>
         </section>
