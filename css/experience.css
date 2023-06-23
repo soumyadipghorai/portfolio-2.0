@@ -28,7 +28,7 @@
         background-repeat: no-repeat;
         background-position: center;
     }
-    .experience .education-details h4, .credentials-button{
+    .experience .education-details .credentials-button{
         opacity: 0;
     }
         .experience .education-details:hover .credentials-button{
@@ -36,11 +36,7 @@
             transform: translateY(20%);
             transition: 0.3s linear;
         }
-        .experience .education-details:hover h4{
-            opacity: 1;
-            transform: translateY(20%);
-            transition: 0.3s linear;
-        }
+        
     .experience .credentials-button{
         background-color: transparent;
         border-radius: 30px;
