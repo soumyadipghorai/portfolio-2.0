@@ -106,4 +106,7 @@
     position: fixed; 
     z-index: 100;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

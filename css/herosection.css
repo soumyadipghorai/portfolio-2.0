@@ -43,67 +43,142 @@
     position: relative;
 }
 
-.hero-section .image-container .linkedIn{
-    height: 22%;
-    width: 20%;
+.hero-section .image-container .additional-details{
     z-index: 3;
-    top: 92%;
-    left: 14%;
     position: absolute;
     background-color: var(--primaryColor);
     border-radius: 10px;
     color: white;
     text-align: center;
+    top: 92%;
+    height: 21%;
+    width: 21%;
 }
-    .counter{
+
+.hero-section .image-container .right-side{
+    right: 13%;
+}
+.hero-section .image-container .left-side{
+    left: 11%;
+}
+    .counter, .hero-section .image-container .plus{
         font-weight: 700;
     }
 
 @media only screen and (max-width: 1251px) {
-    .hero-section .image-container .linkedIn{
-        left: 11%;
+    .hero-section .image-container .additional-details{
         width: 21%;
+    }
+    .hero-section .image-container .right-side{
+        right: 11%;
+    }
+    .hero-section .image-container .left-side{
+        left: 9%;
     }
 }
 @media only screen and (max-width: 1110px) {
-    .hero-section .image-container .linkedIn{
-        left: 8%;
+    .hero-section .image-container .additional-details{
         width: 22%;
+    }
+    .hero-section .image-container .right-side{
+        right: 10%;
+    }
+    .hero-section .image-container .left-side{
+        left: 8%;
     }
 }
 
 @media only screen and (max-width: 992px) {
-    .hero-section .image-container .linkedIn{
-        left: 24%;
-        width: 14%;
+    .hero-section .image-container .additional-details{
+        width: 22%;
+    }
+    .hero-section .image-container .right-side{
+        right: 7%;
+    }
+    .hero-section .image-container .left-side{
+        left: 4%;
+    }
+    .hero-section .hero-image{
+        max-width: 100%;
     }
 }
 
 @media only screen and (max-width: 870px) {
-    .hero-section .image-container .linkedIn{
-        left: 20%;
-        width: 16%;
+    .hero-section .image-container .additional-details{
+        width: 24%;
+    }
+    .hero-section .image-container .right-side{
+        right: 5%;
+    }
+    .hero-section .image-container .left-side{
+        left: 3%;
     }
 }
 @media only screen and (max-width: 740px) {
-    .hero-section .image-container .linkedIn{
-        left: 16%;
+    .hero-section .image-container .additional-details{
         width: 18%;
         height: 25%;
     }
+    .hero-section .image-container .right-side{
+        right: 17%;
+    }
+    .hero-section .image-container .left-side{
+        left: 16%;
+    }
 }
 @media only screen and (max-width: 650px) {
-    .hero-section .image-container .linkedIn{
-        left: 11%;
-        width: 20%;
+    .hero-section .image-container .additional-details{
+        width: 22%;
+    }
+    .hero-section .image-container .right-side{
+        right: 12%;
+    }
+    .hero-section .image-container .left-side{
+        left: 10%;
     }
 }
-@media only screen and (max-width: 570px) {
-    .hero-section .image-container .linkedIn{
-        left: 11%;
-        width: 20%;
+@media only screen and (max-width: 580px) {
+    .hero-section .image-container .additional-details{
+        width: 22%;
+    }
+    .hero-section .image-container .right-side{
+        right: 10%;
+    }
+    .hero-section .image-container .left-side{
+        left: 8%;
     }
 }
+@media only screen and (max-width: 520px) {
+    .hero-section .image-container .additional-details{
+        width: 24%;
+    }
+    .hero-section .image-container .right-side{
+        right: 6%;
+    }
+    .hero-section .image-container .left-side{
+        left: 4%;
+    }
+}
+@media only screen and (max-width: 420px) {
+    .hero-section .image-container .additional-details{
+        height: 28%;
+    }
+}
+@media only screen and (max-width: 390px) {
+    .hero-section .image-container .additional-details{
+        height: fit-content;
+    }
+    .hero-section .image-container .additional-details p{
+        display: none;
+    }
+}
+@media only screen and (max-width: 350px) {
+    /* .hero-section .image-container .additional-details{
+        height: 34%;
+    } */
+}
+
+
 
 @media only screen and (max-width: 576px) {
     .hero-section .section-subtitle{

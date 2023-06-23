@@ -67,7 +67,7 @@ window.addEventListener('scroll', function() {
 
 // auto increment hero-section 
 const counters = document.querySelectorAll('.counter');
-const speed = 150;
+const speed = 500;
 
 counters.forEach( counter => {
    const animate = () => {
