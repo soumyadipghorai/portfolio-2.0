@@ -6,12 +6,24 @@
 
 .areas-of-interest-text, .areas-of-interest-section .text-wrapper{
     text-align: center;
+}
+.areas-of-interest-section .areas-of-interest-text{
     width: 80%;
 }
 
+@media only screen and (max-width: 768px) {        
+    .areas-of-interest-section .border-col{
+        padding-bottom: 3%;
+    }
+    .areas-of-interest-section .margin-col{
+        padding-top: 3%;
+    }
+}
+    
+
 @media only screen and (max-width: 992px) {
-    .areas-of-interest-section .col{
-        height: 80%;
+    .areas-of-interest-section .areas-of-interest-text{
+        width: 100%;
     }
 }
     

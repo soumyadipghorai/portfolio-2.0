@@ -1,7 +1,8 @@
 function runAll() {
     // modifyBorder_experience();
-    duplicateExperience();
+    // duplicateExperience();
     // changeDropIcon();
+    console.log('running');
 }
 
 // prealoader 
