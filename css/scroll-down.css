@@ -20,3 +20,15 @@
 .scroll-down{
     margin-bottom: 10%;
 }
+
+@media only screen and (max-width: 768px){
+    .scroll-down .scroller-container{
+        margin-bottom: 20%;
+    } 
+}
+
+@media only screen and (max-width: 500px){
+    .scroll-down .scroller-container{
+        margin-bottom: 30%;
+    } 
+}
