@@ -1,10 +1,3 @@
-function runAll() {
-    // modifyBorder_experience();
-    // duplicateExperience();
-    // changeDropIcon();
-    console.log('running');
-}
-
 // prealoader 
 var loader = document.getElementById('preloader'); 
 window.addEventListener("load", function(){
@@ -25,6 +18,33 @@ function modifyBorder_experience() {
         } 
     }
 }
+
+window.addEventListener('scroll', function(){
+    // var flag = true; 
+    var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+    
+
+    if (width <= 770){
+        var fullTimeSection = document.getElementById('fullTimeHeroSection');
+
+        fullTimeSection.style = "";
+        fullTimeSection.style.background = "linear-gradient(0deg, var(--primaryColor), rgba(0, 0, 0, 0)), url('images/contact/contact-section-image.jpg') no-repeat";
+        fullTimeSection.style.backgroundPosition = "center";
+        fullTimeSection.style.backgroundSize = "cover";
+        fullTimeSection.style.backgroundRepeat = "no-repeat";
+    }
+
+    else{
+        var fullTimeSection = document.getElementById('fullTimeHeroSection');
+
+        fullTimeSection.style = "";
+        fullTimeSection.style.background = "linear-gradient(270deg, var(--primaryColor), rgba(0, 0, 0, 0)), url('images/contact/contact-section-image.jpg') no-repeat";
+        fullTimeSection.style.backgroundPosition = "center";
+        fullTimeSection.style.backgroundSize = "cover";
+        fullTimeSection.style.backgroundRepeat = "no-repeat";
+        // flag = true;
+    }
+})
 
 // image duplicate --> prev experience 
 function duplicateExperience() {
@@ -47,24 +67,24 @@ function changeDropIcon() {
 }
 
 // books scroller 
-window.addEventListener('scroll', function() {
-    var scrollingColumns = document.querySelector('.scrolling-columns');
-    var section = document.querySelector('.books-section');
+// window.addEventListener('scroll', function() {
+//     var scrollingColumns = document.querySelector('.scrolling-columns');
+//     var section = document.querySelector('.books-section');
 
-    var sectionOffsetTop = section.offsetTop;
-    var sectionHeight = section.offsetHeight;
-    var windowScrollTop = window.pageYOffset;
-    // console.log(windowScrollTop, sectionOffsetTop);
-    var windowHeight = window.innerHeight;
+//     var sectionOffsetTop = section.offsetTop;
+//     var sectionHeight = section.offsetHeight;
+//     var windowScrollTop = window.pageYOffset;
+//     // console.log(windowScrollTop, sectionOffsetTop);
+//     var windowHeight = window.innerHeight;
 
-    var scrollTriggerOffset = 0; // Adjust this value as needed
+//     var scrollTriggerOffset = 0; // Adjust this value as needed
 
-    if (windowScrollTop > sectionOffsetTop - windowHeight + scrollTriggerOffset && windowScrollTop < sectionOffsetTop + sectionHeight) {
-        scrollingColumns.style.transform = 'translateY(-' + (windowScrollTop - sectionOffsetTop + scrollTriggerOffset) / 2 + 'px)';
-    } else {
-        scrollingColumns.style.transform = 'translateY(0)';
-    }
-});
+//     if (windowScrollTop > sectionOffsetTop - windowHeight + scrollTriggerOffset && windowScrollTop < sectionOffsetTop + sectionHeight) {
+//         scrollingColumns.style.transform = 'translateY(-' + (windowScrollTop - sectionOffsetTop + scrollTriggerOffset) / 2 + 'px)';
+//     } else {
+//         scrollingColumns.style.transform = 'translateY(0)';
+//     }
+// });
 
 // auto increment hero-section 
 const counters = document.querySelectorAll('.counter');

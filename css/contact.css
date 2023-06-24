@@ -25,13 +25,14 @@
     grid-template-columns: 1fr 1fr;
     row-gap: 6%;
     column-gap: 2%;
-    grid-auto-rows: minmax(150px, auto);
+    grid-auto-rows: minmax(100px, auto);
     grid-auto-columns: minmax(50px, auto);
 }
 
 .contact-section .freelance-card-container .freelance-card {
     background-color: white;
     border-radius: var(--borderRadius);
+    /* overflow: hidden; */
 }
 .contact-section .freelance-card-container .active{
     box-shadow: var(--boxShadowStyleWhite);
@@ -41,4 +42,19 @@
     background-color: transparent;
     border: 1px solid var(--primaryColor);
     border-radius: 30px;
+}
+
+.contact-section .freelance-section{
+    border: 1px solid var(--primaryColor);
+}
+
+@media only screen and (max-width: 768px){
+    .contact-section .full-time-section{
+        height: 100vh;
+    }    
+}
+@media only screen and (max-width: 822px){
+    .contact-section .freelance-card-container p, .contact-section .freelance-card-container button svg{
+        display: none;
+    }    
 }
