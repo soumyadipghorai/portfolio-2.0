@@ -22,3 +22,16 @@
     border: 1px solid white;
     border-radius: 30px;
 }
+
+@media only screen and (max-width: 768px){
+    .footer-section .social-media img{
+        height: 25px;
+    }     
+    .footer-section .to-hide{
+        display: none;
+    }     
+    .footer-section .left-side h3{
+        margin-bottom: 6%;
+    }     
+}
+

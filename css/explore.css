@@ -14,3 +14,11 @@
         border-radius: 30px;
         color: white;
     }   
+
+@media only screen and (max-width: 768px){
+    .explore-section .text-area{
+        width: 85%;
+        text-align: center;
+        color: white;
+    }     
+}
