@@ -1,5 +1,5 @@
 .accordion-section .image-container{
-    height: 30vw;
+    height: 40vh;
     width: 100%;
     color: white;
     border-radius: var(--borderRadius);
@@ -41,4 +41,10 @@
 .accordion-section .accordion-content-learn-more{
     background-color: transparent;
     border-radius: 30px;
+}
+
+@media only screen and (max-width: 768px){
+    .accordion-section .image-container{
+        display: none;
+    }    
 }
