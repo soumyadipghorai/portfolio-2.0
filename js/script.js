@@ -1,4 +1,4 @@
-// prealoader 
+// prealoader --> body 
 var loader = document.getElementById('preloader'); 
 window.addEventListener("load", function(){
     loader.style.display = "none";
@@ -19,14 +19,13 @@ function modifyBorder_experience() {
     }
 }
 
+// modify gradient --> contact section 
 window.addEventListener('scroll', function(){
-    // var flag = true; 
     var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
     
 
     if (width <= 770){
         var fullTimeSection = document.getElementById('fullTimeHeroSection');
-
         fullTimeSection.style = "";
         fullTimeSection.style.background = "linear-gradient(0deg, var(--primaryColor), rgba(0, 0, 0, 0)), url('images/contact/contact-section-image.jpg') no-repeat";
         fullTimeSection.style.backgroundPosition = "center";
@@ -36,13 +35,11 @@ window.addEventListener('scroll', function(){
 
     else{
         var fullTimeSection = document.getElementById('fullTimeHeroSection');
-
         fullTimeSection.style = "";
         fullTimeSection.style.background = "linear-gradient(270deg, var(--primaryColor), rgba(0, 0, 0, 0)), url('images/contact/contact-section-image.jpg') no-repeat";
         fullTimeSection.style.backgroundPosition = "center";
         fullTimeSection.style.backgroundSize = "cover";
         fullTimeSection.style.backgroundRepeat = "no-repeat";
-        // flag = true;
     }
 })
 
@@ -53,7 +50,7 @@ function duplicateExperience() {
     document.querySelector('.logos').appendChild(logos);
 }
 
-// drop down icon change 
+// drop down icon change --> accordion
 function changeDropIcon() {
     var accordionItems = document.getElementsByClassName('accordion-list-item');
     for (let i = 0; i < accordionItems.length; i++){
@@ -66,7 +63,8 @@ function changeDropIcon() {
     }
 }
 
-// books scroller 
+
+// books scroller --> books section
 // window.addEventListener('scroll', function() {
 //     var scrollingColumns = document.querySelector('.scrolling-columns');
 //     var section = document.querySelector('.books-section');
@@ -86,7 +84,7 @@ function changeDropIcon() {
 //     }
 // });
 
-// auto increment hero-section 
+// auto increment hero-section --> hero section
 const counters = document.querySelectorAll('.counter');
 const speed = 500;
 
@@ -107,3 +105,71 @@ counters.forEach( counter => {
    
    animate();
 });
+
+// var aboutSection = document.getElementsByClassName('about-section');
+// console.log(aboutSection);
+// aboutSection.addEventListener('scroll', function(){
+    const images = document.querySelectorAll('.image-box');
+
+    images.forEach((image) => {
+        image.addEventListener('mouseover', () => {
+            images.forEach((img) => {
+                img.classList.remove('active');
+            });
+            image.classList.add('active');
+        });
+    });
+
+    images.forEach((image) => {
+        image.addEventListener('mouseover', () => {
+            images.forEach((img) => {
+                img.classList.remove('active');
+            });
+            image.classList.add('active');
+        });
+    });
+
+    images[images.length - 1].addEventListener('mouseout', () => {
+        images.forEach((image) => {
+            image.classList.remove('active');
+        });
+        images[0].classList.add('active');
+    });
+
+    let activeImage = images[0];
+
+    images.forEach((image) => {
+        image.addEventListener('mouseover', () => {
+            images.forEach((img) => {
+                img.classList.remove('active');
+            });
+            image.classList.add('active');
+            activeImage = image;
+        });
+    });
+
+    images[images.length - 1].addEventListener('mouseout', () => {
+        images.forEach((image) => {
+            image.classList.remove('active');
+        });
+        activeImage.classList.add('active');
+    });
+// })
+
+// images.forEach((image) => {
+//     image.addEventListener('mouseover', () => {
+//         images.forEach((img) => {
+//             img.classList.remove('active');
+//         });
+//         image.classList.add('active');
+//     });
+// });
+
+// images[images.length - 1].addEventListener('mouseout', () => {
+//     images.forEach((image) => {
+//         image.classList.remove('active');
+//     });
+//     images[0].classList.add('active');
+// });
+
+

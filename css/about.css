@@ -9,7 +9,7 @@
 }
 
 .about-section .about-section-gallery .image-box{
-    width: 50px;
+    width: 60px;
     height: 400px;
     border-radius: var(--borderRadius);
     background-size: cover;
@@ -20,7 +20,11 @@
     filter: grayscale(0.8);
 }
 
-    .about-section .about-section-gallery .image-box:hover{
+.about-section .about-section-gallery{
+    overflow: hidden;
+}
+
+    .about-section .about-section-gallery .image-box.active{
         width: 400px;
         cursor: pointer;
         filter: grayscale(0);
@@ -33,11 +37,13 @@
     color: white;
     opacity: 0;
     transition: bottom 0.5s, opacity 0.5s linear;
+    width: 0;
 }
 
-    .about-section .about-section-gallery .image-box:hover .about-section-gallery-text-area{
+    .about-section .about-section-gallery .image-box.active .about-section-gallery-text-area{
         opacity: 1;
         bottom: 2%;
+        width: fit-content;
     }
 
 .about-section .follow-me-button{
