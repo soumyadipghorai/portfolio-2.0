@@ -2,6 +2,7 @@
     border-radius: var(--borderRadius);
     height: 15rem;
     width: 10rem;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     border: 1px solid rgb(201, 201, 201);
@@ -25,8 +26,8 @@
     }
 
     .books-section .books-image-section .image-container{
-        height: 17rem;
-        width: 12rem;
+        height: 11rem;
+        width: 7rem;
     }
 }
 
@@ -34,15 +35,41 @@
     .books-section .text-wrapper{
         width: 100%;
     }
-
-    .books-section .books-image-section .image-container{
-        height: 14rem;
-        width: 9rem;
-    }
-}
-
-@media only screen and (max-width: 576px){
     .books-section .scrolling-column, .books-section .books-columns{
         display: flex;
+        justify-content: space-evenly ;
     }
-}
+
+    .books-section .scrolling-column, .books-section .books-columns{
+        width: 100%;
+        height: 100%;
+    }
+} 
+
+@media only screen and (max-width: 520px){
+    .books-section .books-image-section .image-container{
+        height: 9rem;
+        width: 6rem;
+    }
+} 
+
+@media only screen and (max-width: 420px){
+    .books-section .books-image-section .image-container{
+        height: 8rem;
+        width: 5rem;
+    }
+} 
+
+@media only screen and (max-width: 370px){
+    .books-section .books-image-section .image-container{
+        height: 7rem;
+        width: 4rem;
+    }
+} 
+
+@media only screen and (max-width: 300px){
+    .books-section .books-image-section .image-container{
+        height: 6rem;
+        width: 3rem;
+    }
+} 

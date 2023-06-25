@@ -63,23 +63,49 @@ function changeDropIcon() {
     }
 }
 
+// class scroller class --> books 
+function addScrollerClass(){
+    
+    var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+
+    if (width <= 772){
+        var scrollingColumns = document.querySelector('.scrolling-columns');
+        // scrollingColumns.classList.remove('scrolling-columns');
+        scrollingColumns.classList.add('scroll-left');
+
+        var booksColumn = document.querySelector('.books-columns');
+        booksColumn.classList.add('scroll-right');
+    }
+
+    return false;
+}
 
 // books scroller --> books section
 window.addEventListener('scroll', function() {
-    var scrollingColumns = document.querySelector('.scrolling-columns');
-    var section = document.querySelector('.books-section');
 
+    var section = document.querySelector('.books-section');
+    var scrollingColumns = document.querySelector('.scrolling-columns');
     var sectionOffsetTop = section.offsetTop;
     var sectionHeight = section.offsetHeight;
     var windowScrollTop = window.pageYOffset;
     var windowHeight = window.innerHeight;
 
-    var scrollTriggerOffset = 0; // Adjust this value as needed
+    addScrollerClass(); 
+
+    var scrollLeft = document.querySelector('.scroll-left');
+    var scrollRight = document.querySelector('.scroll-right');
+
+    var scrollTriggerOffset = 100; // Adjust this value as needed
 
     if (windowScrollTop > sectionOffsetTop - windowHeight + scrollTriggerOffset && windowScrollTop < sectionOffsetTop + sectionHeight) {
-        scrollingColumns.style.transform = 'translateY(-' + (windowScrollTop - sectionOffsetTop + scrollTriggerOffset) / 2 + 'px)';
+        if (scrollLeft){
+            scrollLeft.style.transform = 'translateX(-' + (windowScrollTop - sectionOffsetTop + scrollTriggerOffset) / 2 + 'px)';
+            scrollRight.style.transform = 'translateX(' + (windowScrollTop - sectionOffsetTop + scrollTriggerOffset) / 2 + 'px)';
+        } else{
+            scrollingColumns.style.transform = 'translateY(-' + (windowScrollTop - sectionOffsetTop + scrollTriggerOffset) / 2 + 'px)';
+        }
     } else {
-        scrollingColumns.style.transform = 'translateY(0)';
+        scrollingColumns.style.transform = 'translateY(-1)';
     }
 });
 
@@ -151,22 +177,4 @@ images[images.length - 1].addEventListener('mouseout', () => {
     });
     activeImage.classList.add('active');
 });
-// })
-
-// images.forEach((image) => {
-//     image.addEventListener('mouseover', () => {
-//         images.forEach((img) => {
-//             img.classList.remove('active');
-//         });
-//         image.classList.add('active');
-//     });
-// });
-
-// images[images.length - 1].addEventListener('mouseout', () => {
-//     images.forEach((image) => {
-//         image.classList.remove('active');
-//     });
-//     images[0].classList.add('active');
-// });
-
 
