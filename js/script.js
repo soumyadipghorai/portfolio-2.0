@@ -65,28 +65,27 @@ function changeDropIcon() {
 
 
 // books scroller --> books section
-// window.addEventListener('scroll', function() {
-//     var scrollingColumns = document.querySelector('.scrolling-columns');
-//     var section = document.querySelector('.books-section');
+window.addEventListener('scroll', function() {
+    var scrollingColumns = document.querySelector('.scrolling-columns');
+    var section = document.querySelector('.books-section');
 
-//     var sectionOffsetTop = section.offsetTop;
-//     var sectionHeight = section.offsetHeight;
-//     var windowScrollTop = window.pageYOffset;
-//     // console.log(windowScrollTop, sectionOffsetTop);
-//     var windowHeight = window.innerHeight;
+    var sectionOffsetTop = section.offsetTop;
+    var sectionHeight = section.offsetHeight;
+    var windowScrollTop = window.pageYOffset;
+    var windowHeight = window.innerHeight;
 
-//     var scrollTriggerOffset = 0; // Adjust this value as needed
+    var scrollTriggerOffset = 0; // Adjust this value as needed
 
-//     if (windowScrollTop > sectionOffsetTop - windowHeight + scrollTriggerOffset && windowScrollTop < sectionOffsetTop + sectionHeight) {
-//         scrollingColumns.style.transform = 'translateY(-' + (windowScrollTop - sectionOffsetTop + scrollTriggerOffset) / 2 + 'px)';
-//     } else {
-//         scrollingColumns.style.transform = 'translateY(0)';
-//     }
-// });
+    if (windowScrollTop > sectionOffsetTop - windowHeight + scrollTriggerOffset && windowScrollTop < sectionOffsetTop + sectionHeight) {
+        scrollingColumns.style.transform = 'translateY(-' + (windowScrollTop - sectionOffsetTop + scrollTriggerOffset) / 2 + 'px)';
+    } else {
+        scrollingColumns.style.transform = 'translateY(0)';
+    }
+});
 
 // auto increment hero-section --> hero section
 const counters = document.querySelectorAll('.counter');
-const speed = 500;
+const speed = 1000;
 
 counters.forEach( counter => {
    const animate = () => {
@@ -106,54 +105,52 @@ counters.forEach( counter => {
    animate();
 });
 
-// var aboutSection = document.getElementsByClassName('about-section');
-// console.log(aboutSection);
-// aboutSection.addEventListener('scroll', function(){
-    const images = document.querySelectorAll('.image-box');
+// about section hover effect 
+const images = document.querySelectorAll('.image-box');
 
+images.forEach((image) => {
+    image.addEventListener('mouseover', () => {
+        images.forEach((img) => {
+            img.classList.remove('active');
+        });
+        image.classList.add('active');
+    });
+});
+
+images.forEach((image) => {
+    image.addEventListener('mouseover', () => {
+        images.forEach((img) => {
+            img.classList.remove('active');
+        });
+        image.classList.add('active');
+    });
+});
+
+images[images.length - 1].addEventListener('mouseout', () => {
     images.forEach((image) => {
-        image.addEventListener('mouseover', () => {
-            images.forEach((img) => {
-                img.classList.remove('active');
-            });
-            image.classList.add('active');
-        });
+        image.classList.remove('active');
     });
+    images[0].classList.add('active');
+});
 
+let activeImage = images[0];
+
+images.forEach((image) => {
+    image.addEventListener('mouseover', () => {
+        images.forEach((img) => {
+            img.classList.remove('active');
+        });
+        image.classList.add('active');
+        activeImage = image;
+    });
+});
+
+images[images.length - 1].addEventListener('mouseout', () => {
     images.forEach((image) => {
-        image.addEventListener('mouseover', () => {
-            images.forEach((img) => {
-                img.classList.remove('active');
-            });
-            image.classList.add('active');
-        });
+        image.classList.remove('active');
     });
-
-    images[images.length - 1].addEventListener('mouseout', () => {
-        images.forEach((image) => {
-            image.classList.remove('active');
-        });
-        images[0].classList.add('active');
-    });
-
-    let activeImage = images[0];
-
-    images.forEach((image) => {
-        image.addEventListener('mouseover', () => {
-            images.forEach((img) => {
-                img.classList.remove('active');
-            });
-            image.classList.add('active');
-            activeImage = image;
-        });
-    });
-
-    images[images.length - 1].addEventListener('mouseout', () => {
-        images.forEach((image) => {
-            image.classList.remove('active');
-        });
-        activeImage.classList.add('active');
-    });
+    activeImage.classList.add('active');
+});
 // })
 
 // images.forEach((image) => {

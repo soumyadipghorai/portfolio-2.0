@@ -14,8 +14,35 @@
     width: 50%;
     height: 100vh;
 }
-.scrolling-column img {
-    width: 100%;
-    display: block;
-    margin-bottom: 10px;
+
+.books-section .text-wrapper{
+    width: 60%;
+}
+
+@media only screen and (max-width: 1050px){
+    .books-section .text-wrapper{
+        width: 90%;
+    }
+
+    .books-section .books-image-section .image-container{
+        height: 17rem;
+        width: 12rem;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .books-section .text-wrapper{
+        width: 100%;
+    }
+
+    .books-section .books-image-section .image-container{
+        height: 14rem;
+        width: 9rem;
+    }
+}
+
+@media only screen and (max-width: 576px){
+    .books-section .scrolling-column, .books-section .books-columns{
+        display: flex;
+    }
 }
