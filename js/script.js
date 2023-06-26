@@ -101,7 +101,7 @@ window.addEventListener('scroll', function() {
     var scrollTriggerOffset = 100; // Adjust this value as needed
 
     if (windowScrollTop > sectionOffsetTop - windowHeight + scrollTriggerOffset && windowScrollTop < sectionOffsetTop + sectionHeight) {
-        if (scrollLeft){
+        if (scrollLeft.length != 0){
             for (let i = 0; i < scrollLeft.length; i++){
                 scrollLeft[i].style.transform = 'translateX(-' + (windowScrollTop - sectionOffsetTop + scrollTriggerOffset) / 2 + 'px)';
             }
@@ -111,6 +111,7 @@ window.addEventListener('scroll', function() {
             }
 
         } else{
+            scrollingColumns.style.overflow = 'visible';
             scrollingColumns.style.transform = 'translateY(-' + (windowScrollTop - sectionOffsetTop + scrollTriggerOffset) / 2 + 'px)';
         }
     } else {
@@ -187,3 +188,31 @@ images[images.length - 1].addEventListener('mouseout', () => {
     activeImage.classList.add('active');
 });
 
+// circular text 
+const text = document.getElementById('circle-text'); 
+const rotate = new CircleType(text).radius(50); 
+
+window.addEventListener('scroll', function() {
+    text.style.transform = 'rotate(' + (window.scrollY * 0.15) + 'deg)'
+})
+
+// testimonial scroller  
+const productContainers = [...document.querySelectorAll('.testimonial-card-container')];
+var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
+const preBtn = [...document.querySelectorAll('.pre-btn')];
+
+productContainers.forEach((item, i) => {
+    var card = item.getElementsByClassName('testimonial-slider-card'); 
+    console.log(card[0]);
+    let containerDimensions = card[0].getBoundingClientRect();
+    let containerWidth = containerDimensions.width;
+
+    nxtBtn[i].addEventListener('click', () => {
+        item.scrollLeft += containerWidth+40;
+    })
+
+    preBtn[i].addEventListener('click', () => {
+        item.scrollLeft -= containerWidth+40;
+    })
+})

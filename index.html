@@ -59,6 +59,14 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- scroller testimonials  -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- for cirlce text  -->
+    <script src="https://cdn.jsdelivr.net/gh/peterhry/CircleType@2.3.1/dist/circletype.min.js"></script>
     
 </head>
 <body onload="runAll()">
@@ -326,17 +334,13 @@
                 </div>
                 <div class="sub-project-4 grid-item p-3" style="background-image: url('https://cdn.dribbble.com/users/1630608/screenshots/15491950/media/92340f8f90d7680794b14a36c2009136.png?resize=400x0'); color: var(--primaryColor);">
                 </div>
-                <!-- <div class="sub-project-5 grid-item p-3" style="background-image: url('https://cdn.dribbble.com/users/4167503/screenshots/17726302/media/b34bf22f18b6f15abf263d7432e3b283.png?resize=400x0'); color: var(--primaryColor);">
-                </div> -->
-                <!-- <div class="sub-project-5 grid-item p-3" style="background-image: url('https://cdn.dribbble.com/users/4467713/screenshots/17539504/media/cc7f467d526ef192bfd72dc009f36c3f.png?compress=1&resize=400x300'); color: var(--primaryColor);">
-                </div> -->
             </div>
         </div>
     </section>
     <div class="container-xxl">
 
-        <!-- ############## testimonials ############## -->
-        <!-- <section class="testimonial-section mt-4">
+        <!-- ############## scoller testimonials ############## -->
+        <section class="testimonial-section mt-5"> 
             <div class="flex-wrapper">
                 <div class="testimonial-section-text">
                     <h2>What My colleges say about me?</h2>
@@ -344,13 +348,20 @@
                     <p>Colleagues commend my data expertise, collaborative spirit, and ability to deliver exceptional results.</p>
                 </div>
             </div>
-            <div class="row g-5 mt-2" style="background: linear-gradient(86.46deg, #FAFAFA 0.3%, rgba(190, 255, 243, 0) 99.17%);">
-                <div class="testimonial-slider p-4 mt-3 mb-3 col-4">
+            
+            <div class="testimonial-card-container mt-3">
+                <button class="pre-btn">
+                    <img src="images/iconpack/arrow-left.svg" alt="">
+                </button>
+                <button class="nxt-btn">
+                    <img src="images/iconpack/arrow-left.svg" alt="">
+                </button>
+                <div class="testimonial-card-section">
                     <div class="testimonial-slider-card p-4">
                         <div class="text-section mb-4">
                             <p>“Soumyadip's exceptional work ethic and analytical brilliance elevate every project to new heights...”</p>
                         </div>
-                        <div class="info-section" style="display: flex;">
+                        <div class="info-section mt-5" style="display: flex;">
                             <div class="image-section">
                                 <img src="images/testimonial/user-dp.jpg" alt="" height="50px" class="user-dp" loading="lazy">
                                 <div class="company m-0 p-1" style="background-color: white;">
@@ -368,12 +379,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="testimonial-slider p-4 mt-3 mb-3 col-4">
+                <div class="testimonial-card-section">
                     <div class="testimonial-slider-card p-4">
                         <div class="text-section mb-4">
-                            <p>“Soumyadip's exceptional work ethic and analytical brilliance elevate every project to new heights...”</p>
+                            <p>“Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde maiores repellendus odit sint ullam nobis rerum non natus veritatis delectus ut sed rem, eum, aliquid, inventore officia ad a eius.”</p>
                         </div>
-                        <div class="info-section" style="display: flex;">
+                        <div class="info-section mt-5" style="display: flex;">
                             <div class="image-section">
                                 <img src="images/testimonial/user-dp.jpg" alt="" height="50px" class="user-dp" loading="lazy">
                                 <div class="company m-0 p-1" style="background-color: white;">
@@ -391,12 +402,173 @@
                         </div>
                     </div>
                 </div>
-                <div class="testimonial-slider p-4 mt-3 mb-3 col-4">
+                <div class="testimonial-card-section">
+                    <div class="testimonial-slider-card p-4">
+                        <div class="text-section mb-4">
+                            <p>“Soumyadip's exceptional work ethic and analytical brilliance elevate every project to new heights...”</p>
+                        </div>
+                        <div class="info-section mt-5" style="display: flex;">
+                            <div class="image-section">
+                                <img src="images/testimonial/user-dp.jpg" alt="" height="50px" class="user-dp" loading="lazy">
+                                <div class="company m-0 p-1" style="background-color: white;">
+                                    <img src="images/testimonial/work/Google.png" alt="" height="15px" class="user-work" loading="lazy">
+                                </div>
+                            </div>
+                            <div class="personal-info ml-2">
+                                <div class="name">
+                                    <h5 class="m-0">Emily Johnson</h5>
+                                </div>
+                                <div class="designation">
+                                    <p class="m-0">Senior Data Scientist</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card-section">
+                    <div class="testimonial-slider-card p-4">
+                        <div class="text-section mb-4">
+                            <p>“Soumyadip's exceptional work ethic and analytical brilliance elevate every project to new heights...”</p>
+                        </div>
+                        <div class="info-section mt-5" style="display: flex;">
+                            <div class="image-section">
+                                <img src="images/testimonial/user-dp.jpg" alt="" height="50px" class="user-dp" loading="lazy">
+                                <div class="company m-0 p-1" style="background-color: white;">
+                                    <img src="images/testimonial/work/Google.png" alt="" height="15px" class="user-work" loading="lazy">
+                                </div>
+                            </div>
+                            <div class="personal-info ml-2">
+                                <div class="name">
+                                    <h5 class="m-0">Emily Johnson</h5>
+                                </div>
+                                <div class="designation">
+                                    <p class="m-0">Senior Data Scientist</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card-section">
+                    <div class="testimonial-slider-card p-4">
+                        <div class="text-section mb-4">
+                            <p>“Soumyadip's exceptional work ethic and analytical brilliance elevate every project to new heights...”</p>
+                        </div>
+                        <div class="info-section mt-5" style="display: flex;">
+                            <div class="image-section">
+                                <img src="images/testimonial/user-dp.jpg" alt="" height="50px" class="user-dp" loading="lazy">
+                                <div class="company m-0 p-1" style="background-color: white;">
+                                    <img src="images/testimonial/work/Google.png" alt="" height="15px" class="user-work" loading="lazy">
+                                </div>
+                            </div>
+                            <div class="personal-info ml-2">
+                                <div class="name">
+                                    <h5 class="m-0">Emily Johnson</h5>
+                                </div>
+                                <div class="designation">
+                                    <p class="m-0">Senior Data Scientist</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card-section">
+                    <div class="testimonial-slider-card p-4">
+                        <div class="text-section mb-4">
+                            <p>“Soumyadip's exceptional work ethic and analytical brilliance elevate every project to new heights...”</p>
+                        </div>
+                        <div class="info-section mt-5" style="display: flex;">
+                            <div class="image-section">
+                                <img src="images/testimonial/user-dp.jpg" alt="" height="50px" class="user-dp" loading="lazy">
+                                <div class="company m-0 p-1" style="background-color: white;">
+                                    <img src="images/testimonial/work/Google.png" alt="" height="15px" class="user-work" loading="lazy">
+                                </div>
+                            </div>
+                            <div class="personal-info ml-2">
+                                <div class="name">
+                                    <h5 class="m-0">Emily Johnson</h5>
+                                </div>
+                                <div class="designation">
+                                    <p class="m-0">Senior Data Scientist</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card-section">
+                    <div class="testimonial-slider-card p-4">
+                        <div class="text-section mb-4">
+                            <p>“Soumyadip's exceptional work ethic and analytical brilliance elevate every project to new heights...”</p>
+                        </div>
+                        <div class="info-section mt-5" style="display: flex;">
+                            <div class="image-section">
+                                <img src="images/testimonial/user-dp.jpg" alt="" height="50px" class="user-dp" loading="lazy">
+                                <div class="company m-0 p-1" style="background-color: white;">
+                                    <img src="images/testimonial/work/Google.png" alt="" height="15px" class="user-work" loading="lazy">
+                                </div>
+                            </div>
+                            <div class="personal-info ml-2">
+                                <div class="name">
+                                    <h5 class="m-0">Emily Johnson</h5>
+                                </div>
+                                <div class="designation">
+                                    <p class="m-0">Senior Data Scientist</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card-section">
+                    <div class="testimonial-slider-card p-4">
+                        <div class="text-section mb-4">
+                            <p>“Soumyadip's exceptional work ethic and analytical brilliance elevate every project to new heights...”</p>
+                        </div>
+                        <div class="info-section mt-5" style="display: flex;">
+                            <div class="image-section">
+                                <img src="images/testimonial/user-dp.jpg" alt="" height="50px" class="user-dp" loading="lazy">
+                                <div class="company m-0 p-1" style="background-color: white;">
+                                    <img src="images/testimonial/work/Google.png" alt="" height="15px" class="user-work" loading="lazy">
+                                </div>
+                            </div>
+                            <div class="personal-info ml-2">
+                                <div class="name">
+                                    <h5 class="m-0">Emily Johnson</h5>
+                                </div>
+                                <div class="designation">
+                                    <p class="m-0">Senior Data Scientist</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card-section">
                     <div class="testimonial-slider-card p-4">
                         <div class="text-section mb-4">
                             <p>“Soumyadip's exceptional work ethic and analytical brilliance elevate every project to new heights...”</p>
                         </div>
                         <div class="info-section" style="display: flex;">
+                            <div class="image-section mt-5">
+                                <img src="images/testimonial/user-dp.jpg" alt="" height="50px" class="user-dp" loading="lazy">
+                                <div class="company m-0 p-1" style="background-color: white;">
+                                    <img src="images/testimonial/work/Google.png" alt="" height="15px" class="user-work" loading="lazy">
+                                </div>
+                            </div>
+                            <div class="personal-info ml-2">
+                                <div class="name">
+                                    <h5 class="m-0">Emily Johnson</h5>
+                                </div>
+                                <div class="designation">
+                                    <p class="m-0">Senior Data Scientist</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card-section">
+                    <div class="testimonial-slider-card p-4">
+                        <div class="text-section mb-4">
+                            <p>“Soumyadip's exceptional work ethic and analytical brilliance elevate every project to new heights...”</p>
+                        </div>
+                        <div class="info-section mt-5" style="display: flex;">
                             <div class="image-section">
                                 <img src="images/testimonial/user-dp.jpg" alt="" height="50px" class="user-dp" loading="lazy">
                                 <div class="company m-0 p-1" style="background-color: white;">
@@ -415,7 +587,8 @@
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
+
 
         <!-- ############## contact section ############## -->
         <section class="contact-section mt-5">
@@ -865,15 +1038,5 @@
             </div>
         </section>
     </footer>
-    <!-- for cirlce text  -->
-    <script src="https://cdn.jsdelivr.net/gh/peterhry/CircleType@2.3.1/dist/circletype.min.js"></script>
-    <script>
-        const text = document.getElementById('circle-text'); 
-        const rotate = new CircleType(text).radius(50); 
-
-        window.addEventListener('scroll', function() {
-            text.style.transform = 'rotate(' + (window.scrollY * 0.15) + 'deg)'
-        })
-    </script>
 </body>
 </html>

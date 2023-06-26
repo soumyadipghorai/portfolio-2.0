@@ -1,3 +1,8 @@
+.testimonial-section {
+    position: relative;
+    overflow: hidden;
+}
+
 .testimonial-section .testimonial-section-text{
     text-align: center;
 }
@@ -5,7 +10,18 @@
 .testimonial-section .testimonial-slider-card{
     box-shadow: var(--boxShadowStyle);
     border-radius: var(--borderRadius);
+    height: 20rem;
+    width: 16rem;
 }
+
+    .testimonial-section .testimonial-slider-card .text-section{
+        height: 10rem;
+        overflow: scroll;
+    }
+
+        .testimonial-section .testimonial-slider-card .text-section::-webkit-scrollbar {
+            display: none;
+        }    
 
 .testimonial-section .info-section .image-section{
     float: left;
@@ -27,3 +43,67 @@
     align-items: center;
     border-radius: 100%;
 }
+
+.testimonial-card-container {
+    padding: 0 10vw;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+  
+    .testimonial-card-container::-webkit-scrollbar {
+        display: none;
+    }
+  
+.testimonial-card-section {
+    flex: 0 0 auto;
+    width: 250px;
+    height: 450px;
+    margin-right: 40px;
+}
+  
+.pre-btn,
+.nxt-btn {
+    border: none;
+    width: 10vw;
+    height: 75%;
+    position: absolute;
+    top: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+    cursor: pointer;
+    opacity: 1;
+    z-index: 1;
+}
+  
+    .pre-btn {
+        left: 0;
+        transform: rotate(180deg);
+    }
+
+    .nxt-btn {
+        right: 0;
+    }
+    
+    .pre-btn img, .nxt-btn img {
+        position: absolute;
+        opacity: 0.2;
+        height: 6%;
+        transform: rotate(180deg);
+    }
+
+    .pre-btn img{
+        bottom : 25%;
+    }
+    
+    .nxt-btn img{
+        top : 25%;
+    }
+    
+    .pre-btn:hover img,
+    .nxt-btn:hover img {
+        opacity: 1;
+    }
+  
