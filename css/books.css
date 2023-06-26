@@ -20,6 +20,10 @@
     width: 60%;
 }
 
+.books-section .scrolling-columns, .books-section .books-columns{
+    overflow: hidden;
+}
+
 @media only screen and (max-width: 1050px){
     .books-section .text-wrapper{
         width: 90%;

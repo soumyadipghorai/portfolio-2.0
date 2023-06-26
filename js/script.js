@@ -69,12 +69,15 @@ function addScrollerClass(){
     var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
 
     if (width <= 772){
-        var scrollingColumns = document.querySelector('.scrolling-columns');
-        // scrollingColumns.classList.remove('scrolling-columns');
-        scrollingColumns.classList.add('scroll-left');
+        var leftScroll = document.querySelector('.scrolling-column').getElementsByClassName('image-container');
+        for (let i = 0; i < leftScroll.length; i++){
+            leftScroll[i].classList.add('scroll-left');
+        }
 
-        var booksColumn = document.querySelector('.books-columns');
-        booksColumn.classList.add('scroll-right');
+        var booksColumn = document.querySelector('.books-columns').getElementsByClassName('image-container');
+        for (let i = 0; i < booksColumn.length; i++){
+            booksColumn[i].classList.add('scroll-right');
+        }
     }
 
     return false;
@@ -92,15 +95,21 @@ window.addEventListener('scroll', function() {
 
     addScrollerClass(); 
 
-    var scrollLeft = document.querySelector('.scroll-left');
-    var scrollRight = document.querySelector('.scroll-right');
+    var scrollLeft = document.getElementsByClassName('scroll-left');
+    var scrollRight = document.getElementsByClassName('scroll-right');
 
     var scrollTriggerOffset = 100; // Adjust this value as needed
 
     if (windowScrollTop > sectionOffsetTop - windowHeight + scrollTriggerOffset && windowScrollTop < sectionOffsetTop + sectionHeight) {
         if (scrollLeft){
-            scrollLeft.style.transform = 'translateX(-' + (windowScrollTop - sectionOffsetTop + scrollTriggerOffset) / 2 + 'px)';
-            scrollRight.style.transform = 'translateX(' + (windowScrollTop - sectionOffsetTop + scrollTriggerOffset) / 2 + 'px)';
+            for (let i = 0; i < scrollLeft.length; i++){
+                scrollLeft[i].style.transform = 'translateX(-' + (windowScrollTop - sectionOffsetTop + scrollTriggerOffset) / 2 + 'px)';
+            }
+
+            for (let i = 0; i < scrollRight.length; i++){
+                scrollRight[i].style.transform = 'translateX(' + (windowScrollTop - sectionOffsetTop + scrollTriggerOffset) / 2 + 'px)';
+            }
+
         } else{
             scrollingColumns.style.transform = 'translateY(-' + (windowScrollTop - sectionOffsetTop + scrollTriggerOffset) / 2 + 'px)';
         }
