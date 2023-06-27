@@ -199,8 +199,8 @@ window.addEventListener('scroll', function() {
 // testimonial scroller  
 const productContainers = [...document.querySelectorAll('.testimonial-card-container')];
 var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
-const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
-const preBtn = [...document.querySelectorAll('.pre-btn')];
+const leftButton = [...document.querySelectorAll('.left-button')];
+const rightButton = [...document.querySelectorAll('.right-button')];
 
 productContainers.forEach((item, i) => {
     var card = item.getElementsByClassName('testimonial-slider-card'); 
@@ -208,11 +208,11 @@ productContainers.forEach((item, i) => {
     let containerDimensions = card[0].getBoundingClientRect();
     let containerWidth = containerDimensions.width;
 
-    nxtBtn[i].addEventListener('click', () => {
-        item.scrollLeft += containerWidth+40;
+    leftButton[i].addEventListener('click', () => {
+        item.scrollLeft -= containerWidth+40;
     })
 
-    preBtn[i].addEventListener('click', () => {
-        item.scrollLeft -= containerWidth+40;
+    rightButton[i].addEventListener('click', () => {
+        item.scrollLeft += containerWidth+40;
     })
 })

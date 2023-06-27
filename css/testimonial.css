@@ -8,15 +8,21 @@
 }
 
 .testimonial-section .testimonial-slider-card{
-    box-shadow: var(--boxShadowStyle);
     border-radius: var(--borderRadius);
+    border: 1px solid var(--borderColor);
     height: 20rem;
     width: 16rem;
 }
 
+    .testimonial-section .testimonial-slider-card:hover{
+        box-shadow: var(--boxShadowStyle);
+        transition: 0.3s linear;
+    }
+
     .testimonial-section .testimonial-slider-card .text-section{
         height: 10rem;
         overflow: scroll;
+        scroll-behavior: smooth;
     }
 
         .testimonial-section .testimonial-slider-card .text-section::-webkit-scrollbar {
@@ -45,11 +51,30 @@
 }
 
 .testimonial-card-container {
-    padding: 0 10vw;
+    padding: 0 4vw;
     display: flex;
     overflow-x: auto;
     scroll-behavior: smooth;
 }
+
+.testimonial-card-container::before, .testimonial-card-container::after{
+    position: absolute;
+    top: 0;
+    width: 5%;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+
+    .testimonial-card-container::before{
+        left: 0;
+        background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+    }
+
+    .testimonial-card-container::after{
+        right: 0;
+        background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+    }
   
     .testimonial-card-container::-webkit-scrollbar {
         display: none;
@@ -58,52 +83,38 @@
 .testimonial-card-section {
     flex: 0 0 auto;
     width: 250px;
-    height: 450px;
+    height: 400px;
     margin-right: 40px;
 }
-  
-.pre-btn,
-.nxt-btn {
-    border: none;
-    width: 10vw;
-    height: 75%;
+
+.left-button, .right-button{
     position: absolute;
-    top: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
-    cursor: pointer;
-    opacity: 1;
-    z-index: 1;
+    top: 50%;
+    height: 6vh;
+    background-color: transparent;
+    border: none;
+    z-index: 3;
 }
-  
-    .pre-btn {
-        left: 0;
-        transform: rotate(180deg);
+
+.left-button img, .right-button img{
+    height: 6vh;
+    opacity: 0.2;
+    cursor: pointer;
+}
+
+    .left-button:hover img, .right-button:hover img{
+        opacity: 0.6;
+        transition: 0.3s linear;
     }
 
-    .nxt-btn {
-        right: 0;
-    }
-    
-    .pre-btn img, .nxt-btn img {
-        position: absolute;
-        opacity: 0.2;
-        height: 6%;
-        transform: rotate(180deg);
-    }
 
-    .pre-btn img{
-        bottom : 25%;
+.right-button{
+    right: 0;
+    transform: rotate(180deg);
+}
+
+@media only screen and (max-width: 768px){
+    .left-button, .right-button{
+        top: 60%;
     }
-    
-    .nxt-btn img{
-        top : 25%;
-    }
-    
-    .pre-btn:hover img,
-    .nxt-btn:hover img {
-        opacity: 1;
-    }
-  
+}
