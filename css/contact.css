@@ -50,9 +50,11 @@
 
 @media only screen and (max-width: 768px){
     .contact-section .full-time-section{
-        height: 100vh;
-    }    
+        height: 85vh;
+        position: relative;
+    }      
 }
+
 @media only screen and (max-width: 822px){
     .contact-section .freelance-card-container p, .contact-section .freelance-card-container button svg{
         display: none;
