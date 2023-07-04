@@ -43,6 +43,14 @@
     position: relative;
 }
 
+.hero-section .image-container .background-svg{
+    position: absolute;
+    top: 5%;
+    z-index: -1;
+    max-width: 90rem;
+    right: 10%;
+}
+
 .hero-section .image-container .additional-details{
     z-index: 3;
     position: absolute;
@@ -53,6 +61,7 @@
     top: 92%;
     height: 21%;
     width: 21%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 .hero-section .image-container .right-side{
@@ -75,6 +84,9 @@
     .hero-section .image-container .left-side{
         left: 9%;
     }
+    .hero-section .image-container .background-svg{
+        right: 5%;
+    }
 }
 @media only screen and (max-width: 1110px) {
     .hero-section .image-container .additional-details{
@@ -87,10 +99,16 @@
         left: 8%;
     }
 }
+@media only screen and (max-width: 1050px) {
+    .hero-section .image-container .background-svg{
+        top: 0;
+    }
+}
 
 @media only screen and (max-width: 992px) {
     .hero-section .image-container .additional-details{
         width: 22%;
+        height: 25%;
     }
     .hero-section .image-container .right-side{
         right: 7%;
@@ -113,8 +131,14 @@
     .hero-section .image-container .left-side{
         left: 3%;
     }
+    .hero-section .image-container .background-svg {
+        bottom: 3rem;
+    }
+     .hero-section .image-container .background-svg svg{
+        width: 25rem;
+    }
 }
-@media only screen and (max-width: 740px) {
+@media only screen and (max-width: 767px) {
     .hero-section .image-container .additional-details{
         width: 18%;
         height: 25%;
@@ -124,6 +148,12 @@
     }
     .hero-section .image-container .left-side{
         left: 16%;
+    }
+    .hero-section .image-container .background-svg {
+        right: 1rem;
+    }
+    .hero-section .image-container .background-svg svg{
+        width: 45rem;
     }
 }
 @media only screen and (max-width: 650px) {
@@ -135,6 +165,12 @@
     }
     .hero-section .image-container .left-side{
         left: 10%;
+    }
+    .hero-section .image-container .background-svg {
+        right: 0;
+    }
+    .hero-section .image-container .background-svg svg{
+        width: 100vw;
     }
 }
 @media only screen and (max-width: 580px) {
@@ -173,9 +209,9 @@
     }
 }
 @media only screen and (max-width: 350px) {
-    /* .hero-section .image-container .additional-details{
-        height: 34%;
-    } */
+    .hero-section .image-container .background-svg svg{
+        height: 150vw;
+    }
 }
 
 
@@ -185,10 +221,3 @@
         margin-top: 14%;
     }
 }
-
-@media only screen and (max-width: 528px) {
-    .hero-section .hero-image{
-        max-width: 100%;
-    }
-}
-    

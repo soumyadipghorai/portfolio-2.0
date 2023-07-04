@@ -11,9 +11,6 @@ start slider only when visited
 background position %
 fix margins and paddings 
 
-questions for accordion 
-    avg reply time 
-    domains in which I wish to work in 
-    why you need a dashboard for your business 
-    problems that can be solved using data science 
-    problems that can't be solved using data science 
+slider for education with gradient border
+
+add image to connect -> https://www.orizon.co/
