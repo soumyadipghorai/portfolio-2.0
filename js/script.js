@@ -213,6 +213,6 @@ productContainers.forEach((item, i) => {
     })
 
     rightButton[i].addEventListener('click', () => {
-        item.scrollLeft += containerWidth+40;
+        item.scrollLeft += (containerWidth+40)*0.99;
     })
 })

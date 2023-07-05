@@ -2,8 +2,8 @@
 
 :root{
     --h1FontSize : 2vw; 
-    --h2FontSize : var(--h1FontSize); 
-    --h3FontSize : var(--h1FontSize); 
+    /* --h2FontSize : var(--h1FontSize); 
+    --h3FontSize : var(--h1FontSize);  */
     --primaryColor : #1B1B1B; 
     --secondaryColor1 : #22CECE; 
     --secondaryColor2 : #1AEBEB; 
@@ -14,6 +14,8 @@
     --headerFontFamily : 'Epilogue', sans-serif;
     --textFontFamily : 'Inter', sans-serif;
     --fontColor : #121212;
+    --backgroundColorLayer1: rgb(131,58,180);
+    --backgroundColorLayer2: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
 }
 
 * {

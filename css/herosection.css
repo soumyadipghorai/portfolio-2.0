@@ -61,7 +61,7 @@
     top: 92%;
     height: 21%;
     width: 21%;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    box-shadow: rgba(0, 0, 0, 0.30) 0px 15px 25px, rgba(0, 0, 0, 0.10) 0px 5px 10px;
 }
 
 .hero-section .image-container .right-side{
@@ -72,6 +72,7 @@
 }
     .counter, .hero-section .image-container .plus{
         font-weight: 700;
+        font-size: 1.2rem;
     }
 
 @media only screen and (max-width: 1251px) {
@@ -103,6 +104,9 @@
     .hero-section .image-container .background-svg{
         top: 0;
     }
+    .hero-section .image-container .additional-details{
+        height: 25%;
+    }
 }
 
 @media only screen and (max-width: 992px) {
@@ -124,6 +128,7 @@
 @media only screen and (max-width: 870px) {
     .hero-section .image-container .additional-details{
         width: 24%;
+        height: 27%;
     }
     .hero-section .image-container .right-side{
         right: 5%;
@@ -187,6 +192,7 @@
 @media only screen and (max-width: 520px) {
     .hero-section .image-container .additional-details{
         width: 24%;
+        height: 28%;
     }
     .hero-section .image-container .right-side{
         right: 6%;
