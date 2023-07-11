@@ -4,9 +4,6 @@
 }
 
 .experience .view-project-button{
-    color: var(--secondaryColor3);
-    background-color: transparent;
-    border: solid 2px var(--secondaryColor3);
     border-radius: 100px;
 }
 
@@ -38,10 +35,7 @@
         }
         
     .experience .credentials-button{
-        background-color: transparent;
         border-radius: 30px;
-        color: var(--secondaryColor3);
-        border: 1px solid var(--secondaryColor3);
         text-transform: capitalize;
     }
  

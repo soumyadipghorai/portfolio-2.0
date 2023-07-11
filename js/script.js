@@ -1,8 +1,8 @@
 // prealoader --> body 
-var loader = document.getElementById('preloader'); 
-window.addEventListener("load", function(){
-    loader.style.display = "none";
-})
+// var loader = document.getElementById('preloader'); 
+// window.addEventListener("load", function(){
+//     loader.style.display = "none";
+// })
 
 // modify border --> areas of interest 
 function modifyBorder_experience() {

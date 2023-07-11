@@ -5,10 +5,8 @@
     /* --h2FontSize : var(--h1FontSize); #28bbae
     --h3FontSize : var(--h1FontSize);  */
     --primaryColor : #0d0d18; 
-    /* --secondaryColor1 : #e42d33;  */
     --secondaryColor1 : #2bb8a1; 
-    --secondaryColor2 : #1AEBEB;
-    /* --secondaryColor3 : #fc3c6c;  */
+    --secondaryColor2 : #CCCCCC;
     --secondaryColor3 : #e60a69; 
     --borderColor : rgba(186, 186, 186, 0.422);
     --boxShadowStyle : rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; 
@@ -23,7 +21,14 @@
 }
 
 body{
-    background: #fdfdff;
+    /* background: var(--primaryColor) !important; */
+    background: white;
+}
+
+.cta-button-style{
+    border: 1px solid var(--secondaryColor3);
+    color: var(--secondaryColor3);
+    background-color: transparent;
 }
 
 * {

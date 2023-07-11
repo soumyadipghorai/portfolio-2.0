@@ -13,9 +13,6 @@
     column-gap: 3%;
     grid-auto-rows: minmax(150px, auto);
     grid-auto-columns: minmax(50px, auto);
-    /* overflow-x: scroll;
-    overflow-y: visible;
-    scroll-behavior: smooth;  */
 }
 
     .areas-of-interest-section .feature-area::-webkit-scrollbar { 
@@ -29,7 +26,7 @@
 .areas-of-interest-section .feature-area .feature{
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     border-radius: var(--borderRadius);
-    background-color: white;
+    background: linear-gradient(310deg, #cccccc4d, #cccccc2a);
     position: relative;
 }
     .areas-of-interest-section .feature-area .feature:hover{

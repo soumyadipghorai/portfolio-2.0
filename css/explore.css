@@ -9,10 +9,7 @@
     justify-content: center;
 }   
     .explore-section .button-area .explore-button{
-        background-color: transparent;
-        border: 1px solid white;
         border-radius: 30px;
-        color: white;
     }   
 
 @media only screen and (max-width: 768px){

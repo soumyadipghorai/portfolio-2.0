@@ -16,10 +16,7 @@
 }
 
 .footer-section .get-connected-button{
-    background-color: transparent;
-    color: white;
     text-transform: capitalize;
-    border: 1px solid white;
     border-radius: 30px;
 }
 

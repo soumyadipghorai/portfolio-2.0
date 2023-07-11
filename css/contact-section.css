@@ -17,8 +17,7 @@
     }
 
     .contact-section .full-time-section .get-in-touch-button{
-    background-color: transparent;
-    border: 1px solid white;
+    background-color: var(--secondaryColor3);
     border-radius: 30px; 
     color: white;
     text-transform: uppercase;
@@ -36,7 +35,7 @@
 
     .contact-section .freelance-section .freelance-card-container .freelance-card{
         border: 1px solid rgb(28, 27, 27);
-        background: linear-gradient(120deg, rgb(28, 27, 27), rgba(31, 30, 30, 0.673));
+        background: linear-gradient(310deg, rgba(35, 33, 33, 0.322), rgba(31, 30, 30, 0.673));
         border-radius: 10px;
     }
 

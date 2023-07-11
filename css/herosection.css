@@ -14,11 +14,7 @@
 } */
 
 .hero-section .contact-button{
-    background-color: white;
-    border-width: 1px;
-    border-style: solid;
     border-radius: 10px;
-    color: var(--primaryColor);
 }
 
     .hero-section .contact-button:hover{
@@ -27,9 +23,7 @@
     }
 
 .hero-section .resume-button{
-    /* background: linear-gradient(210deg, #1877F2, #1877F2); */
     background: var(--secondaryColor3);
-    /* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 ); */
     border: none;
     color: white;
     font-weight: 300;
@@ -69,7 +63,7 @@
 }
 
 .hero-section .image-container .right-side{
-    right: 9%;
+    right: 8%;
 }
 .hero-section .image-container .left-side{
     left: 13%;
@@ -81,10 +75,10 @@
 
 @media only screen and (max-width: 1251px) {
     .hero-section .image-container .right-side{
-        right: 8%;
+        right: 7%;
     }
     .hero-section .image-container .left-side{
-        left: 11%;
+        left: 12%;
     }
     .hero-section .image-container .background-svg{
         right: 5%;
@@ -95,7 +89,7 @@
         width: 22%;
     }
     .hero-section .image-container .right-side{
-        right: 6%;
+        right: 4%;
     }
     .hero-section .image-container .left-side{
         left: 9%;
@@ -116,7 +110,7 @@
         height: 26%;
     }
     .hero-section .image-container .right-side{
-        right: 0;
+        right: -1%;
     }
     .hero-section .image-container .left-side{
         left: 4%;
@@ -143,9 +137,10 @@
     .hero-section .image-container .additional-details{
         width: 18%;
         height: 25%;
+        top: 79%;
     }
     .hero-section .image-container .right-side{
-        right: 15%;
+        right: 14%;
     }
     .hero-section .image-container .left-side{
         left: 18%;
@@ -161,7 +156,7 @@
 
 @media only screen and (max-width: 700px) {
     .hero-section .image-container .right-side{
-        right: 14%;
+        right: 12%;
     }
     .hero-section .image-container .left-side{
         left: 17%;
@@ -173,7 +168,7 @@
         width: 22%;
     } 
     .hero-section .image-container .right-side{
-        right: 8%;
+        right: 6%;
     }
     .hero-section .image-container .left-side{
         left: 11%;
@@ -187,7 +182,7 @@
 }
 @media only screen and (max-width: 585px) {
     .hero-section .image-container .right-side{
-        right: 6%;
+        right: 5%;
     }
     .hero-section .image-container .left-side{
         left: 10%;
@@ -198,7 +193,7 @@
         width: 24%;
     } 
     .hero-section .image-container .right-side{
-        right: 2%;
+        right: 1%;
     }
     .hero-section .image-container .left-side{
         left: 6%;
