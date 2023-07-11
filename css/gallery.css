@@ -54,12 +54,12 @@
     height: 250px;
     margin: 0 20px;
     border-radius: var(--borderRadius);
-    filter: grayscale(0.5);
+    filter: grayscale(100%);
 }
 
     .gallery-section .image-slider img:hover{
-        filter: grayscale(0);
-        transition: 0.2s linear;
+        filter: grayscale(0%);
+        transition: 0.3s ease-in;
     }
     
 

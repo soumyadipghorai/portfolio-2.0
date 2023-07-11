@@ -27,7 +27,7 @@
 nav .nav-element-style{
     color: var(--fontColor);
     font-weight: 300;
-    font-size: 1.4vw;
+    font-size: 0.2rem;
     text-transform: lowercase;
     display: inline-block;
     position: relative;
@@ -53,10 +53,16 @@ nav .nav-element-style{
 }
 
 .nav-bar-section .nav-bar-contact-button{
-    background-color: var(--primaryColor);
+    /* background-color: var(--primaryColor); */
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #de7d15 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
     color: white;
     border-radius: 5px;
-    border: 1px solid var(--primaryColor);
+    /* border: 1px solid var(--primaryColor); */
+    border: none;
     font-weight: 200;
 }
     .nav-bar-section .nav-bar-contact-button:hover{

@@ -22,24 +22,20 @@ function modifyBorder_experience() {
 // modify gradient --> contact section 
 window.addEventListener('scroll', function(){
     var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
-    
+
+    var fullTimeSection = document.getElementById('fullTimeSection');
+    fullTimeSection.style = "";
 
     if (width <= 770){
-        var fullTimeSection = document.getElementById('fullTimeHeroSection');
-        fullTimeSection.style = "";
-        fullTimeSection.style.background = "linear-gradient(0deg, var(--primaryColor), rgba(0, 0, 0, 0)), url('images/contact/contact-section-image.jpg') no-repeat";
-        fullTimeSection.style.backgroundPosition = "center";
+        fullTimeSection.style.background = "linear-gradient(0deg, var(--primaryColor), #e42d3315), url('images/contact/pattern-two.png') no-repeat";
         fullTimeSection.style.backgroundSize = "cover";
-        fullTimeSection.style.backgroundRepeat = "no-repeat";
+        fullTimeSection.style.backgroundPosition = "center";
     }
-
+    
     else{
-        var fullTimeSection = document.getElementById('fullTimeHeroSection');
-        fullTimeSection.style = "";
-        fullTimeSection.style.background = "linear-gradient(270deg, var(--primaryColor), rgba(0, 0, 0, 0)), url('images/contact/contact-section-image.jpg') no-repeat";
-        fullTimeSection.style.backgroundPosition = "center";
+        fullTimeSection.style.background = "linear-gradient(270deg, var(--primaryColor), #e42d3315), url('images/contact/pattern-two.png') no-repeat";
         fullTimeSection.style.backgroundSize = "cover";
-        fullTimeSection.style.backgroundRepeat = "no-repeat";
+        fullTimeSection.style.backgroundPosition = "center";
     }
 })
 

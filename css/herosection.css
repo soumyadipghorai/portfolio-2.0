@@ -15,7 +15,9 @@
 
 .hero-section .contact-button{
     background-color: white;
-    border: 1px solid var(--primaryColor);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 10px;
     color: var(--primaryColor);
 }
 
@@ -25,14 +27,16 @@
     }
 
 .hero-section .resume-button{
-    background-color: var(--primaryColor);
-    border: 1px solid var(--primaryColor);
+    /* background: linear-gradient(210deg, #1877F2, #1877F2); */
+    background: var(--secondaryColor3);
+    /* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 ); */
+    border: none;
     color: white;
     font-weight: 300;
 }
 
 .typewrite{
-    color: var(--secondaryColor2);
+    color: var(--secondaryColor3);
 }
     .typewrite:hover{
         color : var(--secondaryColor2);
@@ -58,17 +62,17 @@
     border-radius: 10px;
     color: white;
     text-align: center;
-    top: 92%;
+    top: 81%;
     height: 21%;
     width: 21%;
     box-shadow: rgba(0, 0, 0, 0.30) 0px 15px 25px, rgba(0, 0, 0, 0.10) 0px 5px 10px;
 }
 
 .hero-section .image-container .right-side{
-    right: 13%;
+    right: 9%;
 }
 .hero-section .image-container .left-side{
-    left: 11%;
+    left: 13%;
 }
     .counter, .hero-section .image-container .plus{
         font-weight: 700;
@@ -76,28 +80,25 @@
     }
 
 @media only screen and (max-width: 1251px) {
-    .hero-section .image-container .additional-details{
-        width: 21%;
-    }
     .hero-section .image-container .right-side{
-        right: 11%;
+        right: 8%;
     }
     .hero-section .image-container .left-side{
-        left: 9%;
+        left: 11%;
     }
     .hero-section .image-container .background-svg{
         right: 5%;
     }
 }
-@media only screen and (max-width: 1110px) {
+@media only screen and (max-width: 1170px) {
     .hero-section .image-container .additional-details{
         width: 22%;
     }
     .hero-section .image-container .right-side{
-        right: 10%;
+        right: 6%;
     }
     .hero-section .image-container .left-side{
-        left: 8%;
+        left: 9%;
     }
 }
 @media only screen and (max-width: 1050px) {
@@ -111,11 +112,11 @@
 
 @media only screen and (max-width: 992px) {
     .hero-section .image-container .additional-details{
-        width: 22%;
-        height: 25%;
+        width: 25%;
+        height: 26%;
     }
     .hero-section .image-container .right-side{
-        right: 7%;
+        right: 0;
     }
     .hero-section .image-container .left-side{
         left: 4%;
@@ -130,12 +131,6 @@
         width: 24%;
         height: 27%;
     }
-    .hero-section .image-container .right-side{
-        right: 5%;
-    }
-    .hero-section .image-container .left-side{
-        left: 3%;
-    }
     .hero-section .image-container .background-svg {
         bottom: 3rem;
     }
@@ -143,16 +138,17 @@
         width: 25rem;
     }
 }
-@media only screen and (max-width: 767px) {
+
+@media only screen and (max-width: 768px) {
     .hero-section .image-container .additional-details{
         width: 18%;
         height: 25%;
     }
     .hero-section .image-container .right-side{
-        right: 17%;
+        right: 15%;
     }
     .hero-section .image-container .left-side{
-        left: 16%;
+        left: 18%;
     }
     .hero-section .image-container .background-svg {
         right: 1rem;
@@ -161,15 +157,26 @@
         width: 45rem;
     }
 }
+
+
+@media only screen and (max-width: 700px) {
+    .hero-section .image-container .right-side{
+        right: 14%;
+    }
+    .hero-section .image-container .left-side{
+        left: 17%;
+    }
+}
+
 @media only screen and (max-width: 650px) {
     .hero-section .image-container .additional-details{
         width: 22%;
-    }
+    } 
     .hero-section .image-container .right-side{
-        right: 12%;
+        right: 8%;
     }
     .hero-section .image-container .left-side{
-        left: 10%;
+        left: 11%;
     }
     .hero-section .image-container .background-svg {
         right: 0;
@@ -178,27 +185,23 @@
         width: 100vw;
     }
 }
-@media only screen and (max-width: 580px) {
-    .hero-section .image-container .additional-details{
-        width: 22%;
-    }
-    .hero-section .image-container .right-side{
-        right: 10%;
-    }
-    .hero-section .image-container .left-side{
-        left: 8%;
-    }
-}
-@media only screen and (max-width: 520px) {
-    .hero-section .image-container .additional-details{
-        width: 24%;
-        height: 28%;
-    }
+@media only screen and (max-width: 585px) {
     .hero-section .image-container .right-side{
         right: 6%;
     }
     .hero-section .image-container .left-side{
-        left: 4%;
+        left: 10%;
+    }
+}
+@media only screen and (max-width: 530px) {
+    .hero-section .image-container .additional-details{
+        width: 24%;
+    } 
+    .hero-section .image-container .right-side{
+        right: 2%;
+    }
+    .hero-section .image-container .left-side{
+        left: 6%;
     }
 }
 @media only screen and (max-width: 420px) {

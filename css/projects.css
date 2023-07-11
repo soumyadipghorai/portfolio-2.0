@@ -1,5 +1,5 @@
 .project-section{
-    background-color: #1B1B1B;
+    background-color: var(--primaryColor);
     color: white;
 }
 
@@ -19,7 +19,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
     row-gap: 4%;
     column-gap: 1%;
     grid-auto-rows: minmax(150px, auto);

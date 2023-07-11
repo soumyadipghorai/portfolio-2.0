@@ -1,12 +1,13 @@
-.contact-section .full-time-section{
+/* .contact-section .full-time-section{
     position: relative; 
 }
-.contact-section .full-time-section .full-time-section-text{
-    position: relative; 
-    top: 55%;
-    left: 0;
-    color: white;
-}
+
+    .contact-section .full-time-section .full-time-section-text{
+        position: relative; 
+        top: 55%;
+        left: 0;
+        color: white;
+    }
 
 .contact-section .full-time-section .full-time-section-text .get-in-touch-button{
     background-color: transparent;
@@ -32,7 +33,6 @@
 .contact-section .freelance-card-container .freelance-card {
     background-color: white;
     border-radius: var(--borderRadius);
-    /* overflow: hidden; */
 }
 .contact-section .freelance-card-container .active{
     box-shadow: var(--boxShadowStyleWhite);
@@ -46,7 +46,7 @@
 
 .contact-section .freelance-section{
     border: 1px solid var(--primaryColor);
-}
+} */
 
 @media only screen and (max-width: 768px){
     .contact-section .full-time-section{

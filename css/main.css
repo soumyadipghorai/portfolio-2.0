@@ -2,20 +2,28 @@
 
 :root{
     --h1FontSize : 2vw; 
-    /* --h2FontSize : var(--h1FontSize); 
+    /* --h2FontSize : var(--h1FontSize); #28bbae
     --h3FontSize : var(--h1FontSize);  */
-    --primaryColor : #1B1B1B; 
-    --secondaryColor1 : #22CECE; 
-    --secondaryColor2 : #1AEBEB; 
+    --primaryColor : #0d0d18; 
+    /* --secondaryColor1 : #e42d33;  */
+    --secondaryColor1 : #2bb8a1; 
+    --secondaryColor2 : #1AEBEB;
+    /* --secondaryColor3 : #fc3c6c;  */
+    --secondaryColor3 : #e60a69; 
     --borderColor : rgba(186, 186, 186, 0.422);
     --boxShadowStyle : rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; 
     --boxShadowStyleWhite : rgba(255, 255, 255, 0.674) 0px 12px 20px -5px, rgba(254, 254, 254, 0.685) 0px 8px 16px -8px; 
     --borderRadius : 10px; 
     --headerFontFamily : 'Epilogue', sans-serif;
     --textFontFamily : 'Inter', sans-serif;
-    --fontColor : #121212;
+    --fontColor1 : #591A00;
+    --fontColor2 : #1b1b1bdf;
     --backgroundColorLayer1: rgb(131,58,180);
     --backgroundColorLayer2: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+
+body{
+    background: #fdfdff;
 }
 
 * {
@@ -24,6 +32,14 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+}
+
+.title-color{
+    color: var(--fontColor1);
+}
+.para-color{
+    color: var(--fontColor2);
+    font-weight: 400;
 }
 
 .main-content{

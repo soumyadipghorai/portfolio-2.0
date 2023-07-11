@@ -1,0 +1,62 @@
+.contact-section .full-time-section{
+    display: flex;
+    align-items: end;
+    position: relative;
+    color: white;
+}
+
+.contact-section .freelance-section{
+    background: var(--primaryColor);
+    color: white;
+    overflow-x: scroll;
+    scroll-behavior: smooth; 
+    border: 1px solid var(--primaryColor);
+}
+    .contact-section .freelance-section::-webkit-scrollbar { 
+        display: none;
+    }
+
+    .contact-section .full-time-section .get-in-touch-button{
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 30px; 
+    color: white;
+    text-transform: uppercase;
+}
+
+.contact-section .freelance-section .freelance-card-container{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 4%;
+    column-gap: 2%;
+    grid-auto-rows: minmax(50px, auto);
+    grid-auto-columns: minmax(50px, auto);
+}
+
+    .contact-section .freelance-section .freelance-card-container .freelance-card{
+        border: 1px solid rgb(28, 27, 27);
+        background: linear-gradient(120deg, rgb(28, 27, 27), rgba(31, 30, 30, 0.673));
+        border-radius: 10px;
+    }
+
+    .contact-section .freelance-section .freelance-card-container .freelance-card .text-area .freelance-card-title{
+        font-size: 1.3rem;
+    }
+    
+    .contact-section .freelance-section p {
+        color: rgb(200, 200, 200);
+    }
+
+@media only screen and (max-width: 768px){
+    .contact-section .full-time-section {
+        height: 65vh;
+    }      
+}
+
+@media only screen and (max-width: 450px){
+    .contact-section .freelance-card-container p, .contact-section .freelance-card-container button svg{
+        display: none;
+    }    
+}
+    
