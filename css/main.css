@@ -1,22 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500&family=Inter:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Manrope:&family=Space+Mono&display=swap');
 
 :root{
-    --h1FontSize : 2vw; 
-    /* --h2FontSize : var(--h1FontSize); #28bbae
-    --h3FontSize : var(--h1FontSize);  */
     --primaryColor : #0d0d18; 
-    --secondaryColor1 : #2bb8a1; 
+    --secondaryColor1 : #39FF14; 
     --secondaryColor2 : #CCCCCC;
-    --secondaryColor3 : #e60a69; 
+    --secondaryColor3 : #0d0d18; 
+    --secondaryColor4 : #7c7c7c; 
     --borderColor : rgba(186, 186, 186, 0.422);
     --boxShadowStyle : rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; 
     --boxShadowStyleWhite : rgba(255, 255, 255, 0.674) 0px 12px 20px -5px, rgba(254, 254, 254, 0.685) 0px 8px 16px -8px; 
     --borderRadius : 10px; 
-    --headerFontFamily : 'Epilogue', sans-serif;
+    --titleFontFamily : 'Manrope', sans-serif;
+    --subtitleFontFamily : 'Bodoni Moda', serif;
     --textFontFamily : 'Inter', sans-serif;
-    --fontColor1 : #591A00;
-    --fontColor2 : #1b1b1bdf;
-    --backgroundColorLayer1: rgb(131,58,180);
+    --fontColor1 : black;
+    --fontColor2 : rgb(106, 106, 106);
+    --backgroundColorLayer1: rgb(41, 32, 48);
     --backgroundColorLayer2: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
 }
 
@@ -29,6 +28,7 @@ body{
     border: 1px solid var(--secondaryColor3);
     color: var(--secondaryColor3);
     background-color: transparent;
+    box-shadow: -5px 5px black;
 }
 
 * {
@@ -39,23 +39,35 @@ body{
     box-sizing: border-box;
 }
 
-.title-color{
+.section-title-header{
+    font-family: var(--titleFontFamily);
+    font-weight: 800;
+    font-size: calc(3.2rem+0.9vw);
     color: var(--fontColor1);
 }
-.para-color{
+
+.section-title{
+    font-family: var(--titleFontFamily);
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: var(--fontColor1);
+}
+
+.section-subtitle{
+    font-family: var(--textFontFamily);
+    color : var(--secondaryColor1);
+    text-transform: uppercase;
+    font-size : 1.5rem;
+}
+
+.section-text{
     color: var(--fontColor2);
-    font-weight: 400;
+    font-size: 1.2rem;
+    font-family: var(--textFontFamily);
 }
 
 .main-content{
     width: 100%;
-}
-
-.section-subtitle{
-    color : var(--secondaryColor1);
-    text-transform: uppercase;
-    font-weight : 350;
-    font-size : x-large;
 }
 
 .flex-wrapper{

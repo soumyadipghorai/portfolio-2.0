@@ -24,9 +24,10 @@
 }
 
 .areas-of-interest-section .feature-area .feature{
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    box-shadow: -5px 5px black;
+    border: 1px solid var(--secondaryColor2);
     border-radius: var(--borderRadius);
-    background: linear-gradient(310deg, #cccccc4d, #cccccc2a);
+    background: white;
     position: relative;
 }
     .areas-of-interest-section .feature-area .feature:hover{
