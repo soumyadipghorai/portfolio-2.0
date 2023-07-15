@@ -55,6 +55,7 @@
     margin: 0 20px;
     border-radius: var(--borderRadius);
     filter: grayscale(100%);
+    box-shadow: -5px 5px black;
 }
 
     .gallery-section .image-slider img:hover{

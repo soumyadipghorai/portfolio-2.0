@@ -9,13 +9,14 @@
 
 .testimonial-section .testimonial-slider-card{
     border-radius: var(--borderRadius);
-    border: 1px solid var(--borderColor);
+    border: 1px solid var(--secondaryColor2);
     height: 20rem;
     width: 16rem;
+    box-shadow: -5px 5px black;
 }
 
     .testimonial-section .testimonial-slider-card:hover{
-        box-shadow: var(--boxShadowStyle);
+        box-shadow: -2px 2px black;
         transition: 0.3s linear;
     }
 

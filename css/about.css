@@ -18,6 +18,7 @@
     position: relative;
     transition: width 0.5s linear;
     filter: grayscale(100%);
+    box-shadow: -5px 5px black;
 }
 
 .about-section .about-section-gallery{

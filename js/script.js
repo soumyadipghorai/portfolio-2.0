@@ -27,13 +27,13 @@ window.addEventListener('scroll', function(){
     fullTimeSection.style = "";
 
     if (width <= 770){
-        fullTimeSection.style.background = "linear-gradient(0deg, var(--primaryColor), #e42d3315), url('images/contact/pattern-two.png') no-repeat";
+        fullTimeSection.style.background = "linear-gradient(0deg, var(--primaryColor), #e42d3315), url('images/contact/pattern-three.png') no-repeat";
         fullTimeSection.style.backgroundSize = "cover";
         fullTimeSection.style.backgroundPosition = "center";
     }
     
     else{
-        fullTimeSection.style.background = "linear-gradient(270deg, var(--primaryColor), #e42d3315), url('images/contact/pattern-two.png') no-repeat";
+        fullTimeSection.style.background = "linear-gradient(270deg, var(--primaryColor), #e42d3315), url('images/contact/pattern-three.png') no-repeat";
         fullTimeSection.style.backgroundSize = "cover";
         fullTimeSection.style.backgroundPosition = "center";
     }
