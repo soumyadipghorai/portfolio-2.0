@@ -117,7 +117,7 @@
             <div class="row px-sm-0 px-md-4 py-4 pb-0 pe-lg-0 pt-lg-5 align-items-center hero-section-container">
                 <div class="col-md-6 p-6 p-lg-6 pt-lg-6 text-wrapper">
                     <h3 class="lead section-subtitle lead mt-lg-4 mt-md-5 mt-sm-5">Innovate, Analyze, Impact</h3>
-                    <h1 class="lh-1 section-title-header title-color">Unleashing Data's Potential using<br>Data
+                    <h1 class="lh-1 section-title-header title-color">Unleashing Data's Potential using<span id="linebreak"></span>Data
                         <a href="" class="typewrite" data-period="2000" data-type='["Science", "Analystics", "Storytelling"]'>
                             <span class="wrap">Data Science</span>
                         </a>
@@ -299,12 +299,12 @@
                             </div>
                             <div class="experience-info info-1 p-3">
                                 <div class="number">1.2+</div>
-                                <span class="section-text">years</span>
+                                <span class="section-text"></span>
                                 <p class="section-text">Total experience</p>
                             </div>
                             <div class="experience-info info-2 p-3">
                                 <div class="number">150+</div>
-                                <span class="section-text">years</span>
+                                <span class="section-text"></span>
                                 <p class="section-text">Mentored Students</p>
                             </div>
                         </div>
@@ -410,42 +410,240 @@
     </div>
 
     <!-- ############## project ############## -->
-    <div class="py-md-3 py-sm-0">
+    <div class="project-section-container m-0">
         <section class="project-section my-5 pt-4 pb-3"> 
-            <div class="container-xxl">
-                <div class="flex-wrapper">
-                    <div class="project-section-text">
-                        <h2>Personal Projects</h2>
-                        <h3 class="section-subtitle lead">SOME OF MY DATA SCIENCE PROJECTS</h3>
-                        <p>My expertise in data science, analytics, and AI/ML. From predictive modeling to natural language processing, I explore the power of data to drive insights and solutions.</p>
-                    </div>
+            <div class="container-xxl mt-4">
+                <div class="project-section-text">
+                    <h2 class="section-title" style="color: white;">Personal Project</h2>
+                    <h3 class="section-subtitle">SOME OF MY DATA SCIENCE PROJECTS</h3>
+                    <p class="lead section-text" style="color: var(--secondaryColor2);">My expertise in data science, analytics, and AI/ML. From predictive modeling to natural language processing, I explore the power of data to drive insights and solutions.</p>
                 </div>
-                <div class="project-container p-md-4 px-sm-0 mb-5">
-                    <div class="main-project grid-item p-md-5" style="background: linear-gradient(90deg, rgba(2, 2, 2, 0.312), rgba(24, 24, 24, 0.314));">
-                        <div class="main-project-text p-4">
-                            <h4 class="section-subtitle lead">CONSULTANT DATA SCIENTIST</h4>
-                            <h3>Working on sales optimization...</h3>
-                            <p class="lead">This is the domain I’m currently working on, but you can check out my projects from different domains</p>
-                        </div>
-                        <div class="main-project-button-container p-4">
-                            <button class="px-3 py-2 mt-3 mb-3 main-project-button cta-button-style">
-                                View Project
-                                <img src="images/iconpack/white-arrow.svg" alt="white-arrow" loading="lazy">
+                <div class="row project-container-1">
+                    <div class="col-md-6 col-lg-7 my-4">
+                        <div class="card-left p-3" style="
+                            background : linear-gradient(210deg, rgba(2, 2, 2, 0.204), rgba(2, 2, 2, 0.204)),url('https://images.unsplash.com/photo-1497250681960-ef046c08a56e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z3JlZW58ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=1000&q=60');
+                            background-repeat: no-repeat;
+                            background-position: 0% 45%;
+                            background-size: cover;">
+                            <div class="project-card-text">
+                                <h3>Primary domains of work</h3>
+                                <p class="lead" style="color: var(--secondaryColor2);">My expertise in data science, analytics, and AI/ML. From predictive modeling to natural language processing, I explore the power of data to drive insights and solutions.</p>
+                            </div>
+                            <button class="px-3 py-2 repository-button">
+                                Reposatory
+                                <img src="images/iconpack/white-arrow.svg" alt="">
                             </button>
                         </div>
                     </div>
-                    <div class="sub-project-1 grid-item p-3" style="background-image: url('https://miro.medium.com/v2/resize:fit:2000/1*TEjMGT3zZKz2MaAZBZkXhw.png'); color: var(--primaryColor);">
+                    <div class="col-md-6 col-lg-5 my-4">
+                        <div class="card-right">
+                            <ul class="accordion-container pl-3">
+                                <li class="accordion-list-item py-2">
+                                    <input type="radio" onclick="changeDropIcon()" name="accordion-input" class="accordion-drop-down-radio-button" id="querry-1">
+                                    <label for="querry-1">
+                                        <img src="images/iconpack/accordion-arrow-right.svg" alt="" class="mr-3 accordionDropDown" id="accordionDropDown">
+                                        <h5>
+                                            3X expert at Kaggle
+                                        </h5>
+                                    </label>
+                                    <div class="accordion-content">
+                                        <p> with 10+ notebooks, 5+ scapped datasets and 1000+ views</p>
+                                    </div>
+                                </li>
+                                <li class="accordion-list-item py-2">
+                                    <input type="radio" onclick="changeDropIcon()" name="accordion-input" class="accordion-drop-down-radio-button" id="querry-2">
+                                    <label for="querry-2">
+                                        <img src="images/iconpack/accordion-arrow-right.svg" alt="" class="mr-3 accordionDropDown" id="accordionDropDown">
+                                        <h5>
+                                            Featured Developer on Streamlit
+                                        </h5>
+                                    </label>
+                                    <div class="accordion-content">
+                                        <p>One of my project got featured on streamlit community forum and received recognition from streamlit callifornia.</p>
+                                    </div>
+                                </li>
+                                <li class="accordion-list-item py-2">
+                                    <input type="radio" onclick="changeDropIcon()" name="accordion-input" class="accordion-drop-down-radio-button" id="querry-3">
+                                    <label for="querry-3">
+                                        <img src="images/iconpack/accordion-arrow-right.svg" alt="" class="mr-3 accordionDropDown" id="accordionDropDown">
+                                        <h5>
+                                            GDSC Machine learning lead
+                                        </h5>
+                                    </label>
+                                    <div class="accordion-content">
+                                        <p>hosted events on ML with 100+ participants</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>            
+                </div>    
+                <div class="porject-container-2 mt-4">
+                    <div class="project-card-container my-3">
+                        <div class="project-card mr-4 p-3">
+                            <div class="row" style="height: 100%;">
+                                <div class="col-4 img-container ml-3" style="
+                                    background: linear-gradient(0deg, var(--primaryColor), rgba(2, 2, 2, 0.104)), url('images/projects/project-image-1.png');
+                                    background-position: 0 50%;
+                                    background-repeat: no-repeat;
+                                    background-size: cover;">
+                                    <!-- <a href="https://storyset.com/data">Data illustrations by Storyset</a> -->
+                                </div>
+                                <div class="col-7 ml-2">
+                                    <div class="card-text">
+                                        <h5 class="Porject title" style="color: white;">Predictos</h5>
+                                        <p style="color: var(--secondaryColor2);">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum eos nobis, minus iste dolor vero natus numquam laboriosam qui excepturi?</p>
+                                    </div>
+                                    <button class="view-project-button px-3 py-1">
+                                        View Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card mr-4 p-3">
+                            <div class="row" style="height: 100%;">
+                                <div class="col-4 img-container ml-3" style="
+                                    background: linear-gradient(0deg, var(--primaryColor), rgba(2, 2, 2, 0.104)), url('images/projects/project-image-1.png');
+                                    background-position: 0 50%;
+                                    background-repeat: no-repeat;
+                                    background-size: cover;">
+                                    <!-- <a href="https://storyset.com/data">Data illustrations by Storyset</a> -->
+                                </div>
+                                <div class="col-7 ml-2">
+                                    <div class="card-text">
+                                        <h5 class="Porject title" style="color: white;">Predictos</h5>
+                                        <p style="color: var(--secondaryColor2);">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum eos nobis, minus iste dolor vero natus numquam laboriosam qui excepturi?</p>
+                                    </div>
+                                    <button class="view-project-button px-3 py-1">
+                                        View Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="sub-project-2 grid-item p-3" style="background-image: url('https://cdn.dribbble.com/userupload/4383078/file/original-cef0e8aa148a513d422caa35b7a8a0b4.png?compress=1&resize=400x300&vertical=center'); color: var(--primaryColor);">
+                    <div class="project-card-container my-3">
+                        <div class="project-card mr-4 p-3">
+                            <div class="row" style="height: 100%;">
+                                <div class="col-4 img-container ml-3" style="
+                                    background: linear-gradient(0deg, var(--primaryColor), rgba(2, 2, 2, 0.104)), url('images/projects/project-image-1.png');
+                                    background-position: 0 50%;
+                                    background-repeat: no-repeat;
+                                    background-size: cover;">
+                                    <!-- <a href="https://storyset.com/data">Data illustrations by Storyset</a> -->
+                                </div>
+                                <div class="col-7 ml-2">
+                                    <div class="card-text">
+                                        <h5 class="Porject title" style="color: white;">Predictos</h5>
+                                        <p style="color: var(--secondaryColor2);">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum eos nobis, minus iste dolor vero natus numquam laboriosam qui excepturi?</p>
+                                    </div>
+                                    <button class="view-project-button px-3 py-1">
+                                        View Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card mr-4 p-3">
+                            <div class="row" style="height: 100%;">
+                                <div class="col-4 img-container ml-3" style="
+                                    background: linear-gradient(0deg, var(--primaryColor), rgba(2, 2, 2, 0.104)), url('images/projects/project-image-1.png');
+                                    background-position: 0 50%;
+                                    background-repeat: no-repeat;
+                                    background-size: cover;">
+                                    <!-- <a href="https://storyset.com/data">Data illustrations by Storyset</a> -->
+                                </div>
+                                <div class="col-7 ml-2">
+                                    <div class="card-text">
+                                        <h5 class="Porject title" style="color: white;">Predictos</h5>
+                                        <p style="color: var(--secondaryColor2);">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum eos nobis, minus iste dolor vero natus numquam laboriosam qui excepturi?</p>
+                                    </div>
+                                    <button class="view-project-button px-3 py-1">
+                                        View Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="sub-project-3 grid-item p-3" style="background-image: url('https://cdn.dribbble.com/users/118309/screenshots/14044303/media/af019c3842ef613fb4fbb92fe6875bff.png?resize=400x0'); color: var(--primaryColor);">
+                    <div class="project-card-container-mobile my-3">
+                        <div class="project-card mr-md-4 mr-sm-2 p-3" style="
+                            background: linear-gradient(0deg, var(--primaryColor), rgba(2, 2, 2, 0.504)), url('images/projects/project-image-1.png');
+                            background-position: 0 50%;
+                            background-repeat: no-repeat;
+                            background-size: cover;">
+                            
+                            <div class="card-info-container">
+                                <div class="m-auto">
+                                    <div class="card-text">
+                                        <h5 class="Porject title" style="color: white;">Predictos</h5>
+                                        <p style="color: var(--secondaryColor2);">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum eos nobis, minus iste dolor vero natus numquam laboriosam qui excepturi?</p>
+                                    </div>
+                                    <button class="view-project-button px-3 py-1">
+                                        View Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card mr-md-4 mr-sm-2 p-3" style="
+                            background: linear-gradient(0deg, var(--primaryColor), rgba(2, 2, 2, 0.504)), url('images/projects/project-image-1.png');
+                            background-position: 0 50%;
+                            background-repeat: no-repeat;
+                            background-size: cover;">
+                            
+                            <div class="card-info-container">
+                                <div class="m-auto">
+                                    <div class="card-text">
+                                        <h5 class="Porject title" style="color: white;">Predictos</h5>
+                                        <p style="color: var(--secondaryColor2);">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum eos nobis, minus iste dolor vero natus numquam laboriosam qui excepturi?</p>
+                                    </div>
+                                    <button class="view-project-button px-3 py-1">
+                                        View Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="sub-project-4 grid-item p-3" style="background-image: url('https://cdn.dribbble.com/users/1630608/screenshots/15491950/media/92340f8f90d7680794b14a36c2009136.png?resize=400x0'); color: var(--primaryColor);">
+                    <div class="project-card-container-mobile my-3">
+                        <div class="project-card mr-md-4 mr-sm-2 p-3" style="
+                            background: linear-gradient(0deg, var(--primaryColor), rgba(2, 2, 2, 0.504)), url('images/projects/project-image-1.png');
+                            background-position: 0 50%;
+                            background-repeat: no-repeat;
+                            background-size: cover;">
+                            
+                            <div class="card-info-container">
+                                <div class="m-auto">
+                                    <div class="card-text">
+                                        <h5 class="Porject title" style="color: white;">Predictos</h5>
+                                        <p style="color: var(--secondaryColor2);">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum eos nobis, minus iste dolor vero natus numquam laboriosam qui excepturi?</p>
+                                    </div>
+                                    <button class="view-project-button px-3 py-1">
+                                        View Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card mr-md-4 mr-sm-2 p-3" style="
+                            background: linear-gradient(0deg, var(--primaryColor), rgba(2, 2, 2, 0.504)), url('images/projects/project-image-1.png');
+                            background-position: 0 50%;
+                            background-repeat: no-repeat;
+                            background-size: cover;">
+                            
+                            <div class="card-info-container">
+                                <div class="m-auto">
+                                    <div class="card-text">
+                                        <h5 class="Porject title" style="color: white;">Predictos</h5>
+                                        <p style="color: var(--secondaryColor2);">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum eos nobis, minus iste dolor vero natus numquam laboriosam qui excepturi?</p>
+                                    </div>
+                                    <button class="view-project-button px-3 py-1">
+                                        View Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                </div>        
             </div>
         </section>
     </div>
+
     <div class="container-xxl">
 
         <!-- ############## scoller testimonials ############## -->
@@ -493,52 +691,6 @@
                     <div class="testimonial-slider-card p-4">
                         <div class="text-section mb-4">
                             <p>“Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde maiores repellendus odit sint ullam nobis rerum non natus veritatis delectus ut sed rem, eum, aliquid, inventore officia ad a eius.”</p>
-                        </div>
-                        <div class="info-section mt-5" style="display: flex;">
-                            <div class="image-section">
-                                <img src="images/testimonial/user-dp.jpg" alt="" height="50px" class="user-dp" loading="lazy">
-                                <div class="company m-0 p-1" style="background-color: white;">
-                                    <img src="images/testimonial/work/Google.png" alt="" height="15px" class="user-work" loading="lazy">
-                                </div>
-                            </div>
-                            <div class="personal-info ml-2">
-                                <div class="name">
-                                    <h5 class="m-0">Emily Johnson</h5>
-                                </div>
-                                <div class="designation">
-                                    <p class="m-0">Senior Data Scientist</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card-section">
-                    <div class="testimonial-slider-card p-4">
-                        <div class="text-section mb-4">
-                            <p>“Soumyadip's exceptional work ethic and analytical brilliance elevate every project to new heights...”</p>
-                        </div>
-                        <div class="info-section mt-5" style="display: flex;">
-                            <div class="image-section">
-                                <img src="images/testimonial/user-dp.jpg" alt="" height="50px" class="user-dp" loading="lazy">
-                                <div class="company m-0 p-1" style="background-color: white;">
-                                    <img src="images/testimonial/work/Google.png" alt="" height="15px" class="user-work" loading="lazy">
-                                </div>
-                            </div>
-                            <div class="personal-info ml-2">
-                                <div class="name">
-                                    <h5 class="m-0">Emily Johnson</h5>
-                                </div>
-                                <div class="designation">
-                                    <p class="m-0">Senior Data Scientist</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card-section">
-                    <div class="testimonial-slider-card p-4">
-                        <div class="text-section mb-4">
-                            <p>“Soumyadip's exceptional work ethic and analytical brilliance elevate every project to new heights...”</p>
                         </div>
                         <div class="info-section mt-5" style="display: flex;">
                             <div class="image-section">
@@ -1173,7 +1325,7 @@
     background : linear-gradient(0deg, var(--primaryColor), rgba(2, 2, 2, 0.314)),url('https://images.unsplash.com/photo-1488415032361-b7e238421f1b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80');
     background-repeat: no-repeat;
     background-position: 0% 45%;
-    background-size: cover;" >
+    background-size: cover;">
     <div class="flex-wrapper">
         <div class="text-area mt-5 m-4">
             <h2>Explore the Nature </h2>

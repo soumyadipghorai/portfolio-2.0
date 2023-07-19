@@ -4,6 +4,28 @@
 //     loader.style.display = "none";
 // })
 
+// add breakpoints --> hero section 
+window.addEventListener('load', function(){
+    var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+    const lineBreak = document.getElementById('linebreak'); 
+    const space = '&nbsp'; 
+    const brk = '<br>';
+    console.log(width);
+
+    if (width > 1310){
+        lineBreak.innerHTML = space;
+    }
+    if (width > 770 && width <= 1310){
+        lineBreak.innerHTML = brk;
+    }
+    if (width > 630 && width <= 770){
+        lineBreak.innerHTML = space;
+    }
+    if (width <= 630){
+        lineBreak.innerHTML = brk;
+    }
+})
+
 // modify border --> areas of interest 
 function modifyBorder_experience() {
     var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
