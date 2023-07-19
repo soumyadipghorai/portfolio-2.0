@@ -1,5 +1,5 @@
 .accordion-section .image-container{
-    height: 40vh;
+    height: 100%;
     width: 100%;
     color: white;
     border-radius: var(--borderRadius);

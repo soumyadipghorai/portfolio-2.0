@@ -91,10 +91,10 @@
                 <div class="container-xxl px-0">
                     <div class="collapse navbar-collapse text-center justify-content-end" id="toggleCollapse">
                         <ul class="navbar-nav">
-                            <li><a href="#contact" class="nav-link nav-element-style mr-lg-4 mr-md-4">Home</a></li>
-                            <li><a href="#herosection" class="nav-link nav-element-style mr-lg-4 mr-md-4">Work</a></li>
-                            <li><a href="#about" class="nav-link nav-element-style mr-lg-4 mr-md-4">About</a></li>
-                            <li><a href="#gallery" class="nav-link nav-element-style mr-lg-4 mr-md-4">Gallery</a></li>
+                            <li><a href="#heroSection" class="nav-link nav-element-style mr-lg-4 mr-md-4">Home</a></li>
+                            <li><a href="#experienceSection" class="nav-link nav-element-style mr-lg-4 mr-md-4">Work</a></li>
+                            <li><a href="#aboutSection" class="nav-link nav-element-style mr-lg-4 mr-md-4">About</a></li>
+                            <li><a href="#gallerySection" class="nav-link nav-element-style mr-lg-4 mr-md-4">Gallery</a></li>
                             <!-- <li class="button-container">
                                 <button class="nav-bar-contact-button px-3 py-1 nav-link nav-element-style mr-lg-4 mr-md-4">
                                     contact
@@ -112,7 +112,7 @@
     <div class="container-xxl main-content relative">
 
         <!-- ############## hero section ############## -->
-        <section class="hero-section" id="herosection">
+        <section class="hero-section" id="heroSection">
             <!-- <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_OJ6bhCLTj0.json"  background="transparent"  speed="1"  style="width: 150px; height: 150px;"  loop autoplay class="lottie-player"></lottie-player> -->
             <div class="row px-sm-0 px-md-4 py-4 pb-0 pe-lg-0 pt-lg-5 align-items-center hero-section-container">
                 <div class="col-md-6 p-6 p-lg-6 pt-lg-6 text-wrapper">
@@ -252,7 +252,7 @@
         </section>
          
         <!-- ############## experience ############## -->
-        <section class="experience my-5 py-md-3 py-sm-0">
+        <section class="experience my-5 py-md-3 py-sm-0" id="experienceSection">
             <div class="row mb-5">
                 <div class="col-md-8">
                     <div class="h-100">
@@ -940,14 +940,14 @@
         </section>
         
         <!-- ############## about section ##############  -->
-        <section class="about-section mb-5">
+        <section class="about-section mb-5" id="aboutSection">
             <div class="row m-md-2">
                 <div class="col-md-6">
                     <div class="circular-blob neon-green"></div>
                     <div class="circular-blob grey"></div>
                     <div class="about-section-gallery-container">
                         <div class="about-section-gallery">
-                            <div class="image-box m-1 to-remove" style="background-image: url('images/about-section/estatic.jpg">
+                            <div class="image-box m-1 to-remove" style="background-image: url('images/about-section/estatic.jpg');">
                                 <div class="about-section-gallery-text-area ml-4">
                                     <h4>image-title</h4>
                                     <div class="location" style="display: flex">
@@ -1163,21 +1163,23 @@
                     </ul>
                 </div>
                 <div class="col-md-6">
-                    <div class="flex-wrapper">
-                        <div class="image-container border p-5" style="
-                            background: linear-gradient(0deg, rgba(2, 2, 2, 0.312), rgba(2, 2, 2, 0.314)), url('images/accordion/hero-image-1.jpg');
-                            background-position: center;
-                            background-repeat: no-repeat;
-                            background-size: cover;">
+                    <div class="circular-blob neon-green"></div>
+                    <div class="circular-blob grey"></div>
+                    <div class="image-container border p-5" style="
+                        background: linear-gradient(0deg, rgba(2, 2, 2, 0.312), rgba(2, 2, 2, 0.314)), url('https://images.unsplash.com/photo-1585677526411-ee1991bd1fd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80');
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover; 
+                        box-shadow: -5px 5px black;
+                        height: 90%;">
                         <h2 class="mt-3 mb-5 ml-4">innovate with data science</h2>
-                    </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- ############## gallery ############## -->
-        <section class="gallery-section my-5 p-md-4 px-sm-0">
+        <section class="gallery-section my-5 p-md-4 px-sm-0" id="gallerySection">
             <div class="flex-wrapper mt-5">
                 <div class="gallery-section-text">
                     <h2>Moments Captured, Memories Shared.</h2>
