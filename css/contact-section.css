@@ -17,7 +17,8 @@
     }
 
     .contact-section .full-time-section .get-in-touch-button{
-    background-color: var(--secondaryColor3);
+    border: 2px solid var(--secondaryColor1);
+    background-color: var(--primaryColor);
     border-radius: 30px; 
     color: white;
     text-transform: uppercase;

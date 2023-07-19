@@ -1,5 +1,5 @@
 .books-section .books-image-section .image-container{
-    border-radius: var(--borderRadius);
+    border-radius: 5px;
     height: 15rem;
     width: 10rem;
     background-position: center;

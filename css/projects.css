@@ -1,121 +1,5 @@
-/* .project-section{
-    background-color: var(--primaryColor);
-    color: white;
-}
-
-.project-section-text{
-    text-align: center;
-    width: 60%;
-}
-
-.project-section .main-project-button{
-    border-radius: 30px;
-    border-width: 2px;
-}
-
-.project-section .project-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    row-gap: 4%;
-    column-gap: 1%;
-    grid-auto-rows: minmax(150px, auto);
-    grid-auto-columns: minmax(50px, auto);
-}
-
-.project-section .grid-item{
-    border-radius: var(--borderRadius);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.project-section .main-project{
-    grid-row-start: 1;
-    grid-row-end: 3;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    width: 75%;
-}
-
-.project-section .sub-project-1{
-    grid-row-start: 1;
-    grid-row-end: 3;
-    grid-column-start: 3;
-    grid-column-end: 3;
-}
-
-.project-section .sub-project-2, .sub-project-3, .sub-project-4{
-    grid-row-start: 3;
-    grid-row-end: 5;
-}
-
-@media only screen and (max-width: 1060px){
-    .project-section .project-container{
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-auto-rows: minmax(50px, auto);
-        grid-auto-columns: minmax(50px, auto);
-    }
-    
-    .project-section .main-project{
-        grid-column-start: 1;
-        grid-column-end: 4;
-        width: 100%;
-    }
-    
-    .project-section .sub-project-1, .sub-project-2, .sub-project-3{
-        grid-row-start: 3;
-        grid-row-end: 5;
-    }
-
-    .project-section .sub-project-4{
-        display: none;
-    }
-
-    .project-section-text{
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width: 575px) {        
-    .project-section .project-container{
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-        row-gap: 2%;
-    }  
-    .project-section .main-project{
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 1;
-        grid-row-end: 3;
-        width: 100%;
-    }  
-    .project-section .sub-project-1{
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 3;
-        grid-row-end: 4;
-    }
-    
-    .project-section .sub-project-2{
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 4;
-        grid-row-end: 5;
-    }
-    
-    .project-section .sub-project-3{
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 5;
-        grid-row-end: 6;
-    }
-} */
-
 .project-section-container{
     background: var(--sectionBackgroundColor) ;
-    /* width: 100vw; */
 }
 
 .project-section .project-section-text{
@@ -138,6 +22,10 @@
     height: 100%;  
 }
 
+.project-section .project-container-1 .project-card-text{
+    width: 80%;
+}
+
 .project-section .porject-container-2 .project-card-container, .porject-container-2 .project-card-container-mobile{
     display: flex;
     justify-content: space-between;
@@ -156,25 +44,19 @@
     border-radius: var(--borderRadius);
     box-shadow: rgba(40, 104, 38, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
+
     .project-section .project-card-container .project-card .img-container{
         border-radius: var(--borderRadius);
     }
-
-    /* .project-section .project-card-container .project-card .card-text{
-        max-height: 100px;
-        text-overflow: ellipsis;
-    } */
 
     .project-section .project-card-container .project-card img{
         width: 100%;
     }
 
     .project-section .project-card .view-project-button, .project-section .repository-button{
-        /* background-color: var(--primaryColor); */
         background-color: transparent;
         border: 1px solid var(--secondaryColor1);
         border-radius: 5px;
-        /* box-shadow: -2px 2px var(--secondaryColor1); */
         color: white;
     }
 
@@ -203,7 +85,7 @@
 
 .project-section .card-right input[type='radio']:checked + label + .accordion-content{
     max-height: fit-content;
-    padding: 10px;
+    padding: 0px 10px;
 }
 
 .project-section .accordion-content-learn-more{
@@ -225,6 +107,10 @@
     .project-section .project-card-container-mobile{
         display: flex;
         color: black;
+    }
+
+    .project-section .project-container-1 .project-card-text{
+        width: 100%;
     }
 }
 
