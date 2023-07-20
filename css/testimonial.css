@@ -1,6 +1,7 @@
 .testimonial-section {
     position: relative;
     overflow: hidden;
+    display: none;
 }
 
 .testimonial-section .testimonial-section-text{
