@@ -25,6 +25,7 @@
 
 .areas-of-interest-section .feature-area .feature{
     box-shadow: -5px 5px black;
+    /* box-shadow: var(--boxShadowStyle1); */
     border: 1px solid var(--secondaryColor3);
     border-radius: var(--borderRadius);
     /* background: white; */

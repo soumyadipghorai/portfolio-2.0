@@ -8,8 +8,7 @@
     --secondaryColor3 : #0d0d18; 
     --secondaryColor4 : #7c7c7c; 
     --borderColor : rgba(186, 186, 186, 0.422);
-    --boxShadowStyle : rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; 
-    --boxShadowStyleWhite : rgba(255, 255, 255, 0.674) 0px 12px 20px -5px, rgba(254, 254, 254, 0.685) 0px 8px 16px -8px; 
+    --boxShadowStyle1 : rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     --borderRadius : 10px; 
     --titleFontFamily : 'Manrope', sans-serif;
     --subtitleFontFamily : 'Bodoni Moda', serif;

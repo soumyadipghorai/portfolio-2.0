@@ -106,6 +106,7 @@
     height: 21%;
     width: 21%;
     box-shadow: -5px 5px black;
+    /* box-shadow: var(--boxShadowStyle1); */
 }
 
 .hero-section .image-container .right-side{

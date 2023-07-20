@@ -16,9 +16,11 @@
     }   
 
 @media only screen and (max-width: 768px){
-    .explore-section .text-area{
-        width: 85%;
-        text-align: center;
-        color: white;
-    }     
+    .explore-section .text-area, .explore-section .button-area{
+        display: none;
+    }  
+
+    .explore-section{
+        height: 40vh;
+    }
 }

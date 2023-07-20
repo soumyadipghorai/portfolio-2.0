@@ -1,5 +1,5 @@
 .project-section-container{
-    background: var(--sectionBackgroundColor) ;
+    background: var(--primaryColor) ;
 }
 
 .project-section .project-section-text{
@@ -9,6 +9,7 @@
 .project-section .project-container-1 .card-left{
     color: white;
     border-radius: var(--borderRadius);
+    box-shadow: -5px 5px black;
 }
 
 .project-section .card-right{
@@ -33,7 +34,8 @@
     overflow-x: scroll;
 }
 
-.project-section .project-card-container::-webkit-scrollbar, .porject-container-2 .project-card-container-mobile::-webkit-scrollbar{
+.project-section .project-card-container::-webkit-scrollbar, 
+.porject-container-2 .project-card-container-mobile::-webkit-scrollbar{
     display: none;
 }
 
@@ -42,7 +44,6 @@
     height: calc(2vw + 200px);
     background: rgb(54, 54, 54);
     border-radius: var(--borderRadius);
-    box-shadow: rgba(40, 104, 38, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
     .project-section .project-card-container .project-card .img-container{
