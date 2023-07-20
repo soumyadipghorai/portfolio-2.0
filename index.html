@@ -72,11 +72,11 @@
 <body onload="runAll()">
 
     <!-- preloader -->
-    <!-- <div class="preloader" id="preloader" style="
+    <div class="preloader" id="preloader" style="
         background-color: white;
         background-size: 100%;">
         <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_RM6elkeGwr.json"  background="transparent"  speed="1"  style="width: 150px; height: 150px;"  loop autoplay class="lottie-player"></lottie-player>
-    </div> -->
+    </div>
 
     <!-- ############## navbar ############## -->
     <section class="nav-bar-section" id="navbar" style="margin-bottom: 4%;">
@@ -110,10 +110,14 @@
         </div>          
     </section>
     <div class="container-xxl main-content relative">
-
+        <button class="p-2" onclick="topFunction()" id="myBtn" title="Go to top">
+            <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+            <svg width="25" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.40261 10L10.5275 2.99281C11.1178 1.66906 12.8822 1.66906 13.4725 2.99281L20.835 19.5025C21.5021 20.9984 20.0209 22.5499 18.6331 21.809L12.7294 18.657C12.2702 18.4118 11.7298 18.4118 11.2706 18.657L5.36689 21.809C3.97914 22.5499 2.49789 20.9984 3.16496 19.5025L5.28379 14.7513" stroke="var(--secondaryColor1)" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+        </button>
         <!-- ############## hero section ############## -->
         <section class="hero-section" id="heroSection">
-            <!-- <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_OJ6bhCLTj0.json"  background="transparent"  speed="1"  style="width: 150px; height: 150px;"  loop autoplay class="lottie-player"></lottie-player> -->
             <div class="row px-sm-0 px-md-4 py-4 pb-0 pe-lg-0 pt-lg-5 align-items-center hero-section-container">
                 <div class="col-md-6 p-6 p-lg-6 pt-lg-6 text-wrapper">
                     <h3 class="lead section-subtitle lead mt-lg-4 mt-md-5 mt-sm-5">Innovate, Analyze, Impact</h3>
@@ -158,9 +162,9 @@
         </section>
 
         <!-- ############## areas of interest ############## -->
-        <section class="areas-of-interest-section my-3 pt-5 pb-md-5 pb-sm-0">
+        <section class="areas-of-interest-section reveal fade-bottom pt-5 pb-md-5 pb-sm-0">
             <div class="row">
-                <div class="col-md-6 order-md-2">
+                <div class="col-md-6 reveal fade-right order-md-2">
                     <div class="text-area">
                         <div class="flex-wrapper py-4 p-md-4">
                             <div class="areas-of-interest-text">
@@ -252,7 +256,7 @@
         </section>
          
         <!-- ############## experience ############## -->
-        <section class="experience my-5 py-md-3 py-sm-0" id="experienceSection">
+        <section class="experience reveal fade-bottom my-5 py-md-3 py-sm-0" id="experienceSection">
             <div class="row mb-5">
                 <div class="col-md-8">
                     <div class="h-100">
@@ -289,7 +293,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 education-container">
+                <div class="col-md-4 reveal fade-bottom education-container">
                     <div class="container-xxl">
                         <div class="circular-blob neon-green"></div>
                         <div class="circular-blob grey"></div>
@@ -390,7 +394,7 @@
 
     <!-- ############## project ############## -->
     <div class="project-section-container m-0">
-        <section class="project-section my-5 pt-4 pb-3"> 
+        <section class="project-section reveal fade-bottom my-5 pt-4 pb-3"> 
             <div class="container-xxl mt-4">
                 <div class="project-section-text">
                     <h2 class="section-title" style="color: white;">Personal Project</h2>
@@ -458,7 +462,7 @@
                     </div>            
                 </div>    
                 <div class="porject-container-2 mt-4">
-                    <div class="project-card-container my-3">
+                    <div class="project-card-container reveal fade-left my-3">
                         <div class="project-card mr-4 p-3">
                             <div class="row" style="height: 100%;">
                                 <div class="col-4 img-container ml-3" style="
@@ -500,7 +504,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="project-card-container my-3">
+                    <div class="project-card-container reveal fade-right my-3">
                         <div class="project-card mr-4 p-3">
                             <div class="row" style="height: 100%;">
                                 <div class="col-4 img-container ml-3" style="
@@ -542,7 +546,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="project-card-container-mobile my-3">
+                    <div class="project-card-container-mobile reveal fade-left my-3">
                         <div class="project-card mr-md-4 mr-2 p-3" style="
                             background: linear-gradient(0deg, var(--primaryColor), rgba(2, 2, 2, 0.504)), url('images/projects/project-image-1.png');
                             background-position: 0 50%;
@@ -580,7 +584,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="project-card-container-mobile my-3">
+                    <div class="project-card-container-mobile reveal fade-right my-3">
                         <div class="project-card mr-md-4 mr-2 p-3" style="
                             background: linear-gradient(0deg, var(--primaryColor), rgba(2, 2, 2, 0.504)), url('images/projects/project-image-3.png');
                             background-position: 0 50%;
@@ -626,7 +630,7 @@
     <div class="container-xxl">
 
         <!-- ############## scoller testimonials ############## -->
-        <section class="testimonial-section mt-5"> 
+        <section class="testimonial-section reveal fade-bottom mt-5"> 
             <div class="flex-wrapper">
                 <div class="testimonial-section-text">
                     <h2>What My colleges say about me?</h2>
@@ -642,7 +646,7 @@
                     <img src="images/iconpack/arrow-left.svg" alt="">
                 </button>
             </div>
-            <div class="testimonial-card-container mt-3">
+            <div class="testimonial-card-container reveal fade-left mt-3">
                 <div class="testimonial-card-section">
                     <div class="testimonial-slider-card p-4">
                         <div class="text-section mb-4">
@@ -831,7 +835,7 @@
         </section>
 
         <!-- ############## contact section ############## -->
-        <section class="contact-section my-5">
+        <section class="contact-section reveal fade-bottom my-5">
             <div class="row">
                 <div class="col-md-6 full-time-section" id="fullTimeSection" style="
                     background: linear-gradient(270deg, var(--primaryColor), #e42d3315), url('images/contact/pattern-three.png');
@@ -995,7 +999,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 mt-5">
+                <div class="col-md-6 reveal fade-right mt-5">
                     <div class="about-section-description-text mb-5">
                         <h2>Unleashing few of my stories...</h2>
                         <h3 class="section-subtitle lead">Back in my college days ‘19</h3>
@@ -1016,7 +1020,7 @@
         <!-- https://codepen.io/zacharilius/pen/NGwrgZ -->
         <section class="books-section mt-5 p-md-4" style="z-index: -1;">
             <div class="row">
-                <div class="books-text-section col-lg-8 col-md-8 align-self-center">
+                <div class="books-text-section reveal fade-left col-lg-8 col-md-8 align-self-center">
                     <div class="text-wrapper">
                         <h2>Books that I loved reading</h2>
                         <h3 class="section-subtitle lead">SOME HOBBIES </h3>
@@ -1055,7 +1059,7 @@
                 <div class="col-md-6 skills-section-hero-image">
                     <img src="images/skills/skills_img.png" alt="" width="500" class="" loading="lazy">
                 </div>
-                <div class="col-md-6 skills-section-text align-self-center">
+                <div class="col-md-6 reveal fade-right skills-section-text align-self-center">
                     <div class="text-wrapper mb-5"> 
                         <h2>Tools I Embrace and Explore</h2>
                         <h3 class="section-subtitle lead">Skills & Tools, Fueling Innovation</h3>
@@ -1074,7 +1078,7 @@
         <!-- ############## accordion section ############## -->
         <section class="accordion-section py-5">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 reveal fade-left">
                     <ul class="accordion-container pl-3">
                         <li class="accordion-list-item py-2">
                             <input type="radio" onclick='changeDropIcon()' name="accordion-input" class="accordion-drop-down-radio-button" id="first-querry" checked>
@@ -1110,8 +1114,8 @@
                             </label>
                             <div class="accordion-content">
                                 <p> Dashboards serve as powerful tools for visualizing and interpreting complex business data. For example, in the finance industry, a dashboard can provide real-time insights into financial performance, portfolio management, and risk analysis.</p>
-                                <a href="" target="_blank">
-                                    <button class="accordion-content-learn-more px-3 py-0 my-1">
+                                <a href="https://www.domo.com/learn/article/nine-reasons-why-dashboard-design-is-essential#:~:text=With%20dashboards%2C%20businesses%20can%20track,KPIs%20in%20clear%2C%20effective%20ways." target="_blank">
+                                    <button class="accordion-content-learn-more cta-button-style px-3 py-0 my-1">
                                         Learn More 
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
                                             <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
@@ -1130,8 +1134,8 @@
                             </label>
                             <div class="accordion-content">
                                 <p>Data science can be applied to various domains. For instance, in retail, data science can be used to optimize inventory, forecast demand, personalize customer recommendations. In transportation, data science helps with route optimization, fleet management etc.</p>
-                                <a href="" target="_blank">
-                                    <button class="accordion-content-learn-more px-3 py-0 my-1">
+                                <a href="https://www.mygreatlearning.com/blog/how-data-science-solves-real-business-problems/" target="_blank">
+                                    <button class="accordion-content-learn-more cta-button-style px-3 py-0 my-1">
                                         Learn More 
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
                                             <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
@@ -1150,8 +1154,8 @@
                             </label>
                             <div class="accordion-content">
                                 <p>While data science is a powerful tool, there are challenges it may not address alone. For example, complex ethical dilemmas, Creative problem-solving, innovation, and artistic endeavors typically rely on human intuition, imagination, and subjective judgment.</p>
-                                <a href="" target="_blank">
-                                    <button class="accordion-content-learn-more px-3 py-0 my-1">
+                                <a href="https://towardsdatascience.com/why-is-data-science-failing-to-solve-the-right-problems-7b5b6121e3b4" target="_blank">
+                                    <button class="accordion-content-learn-more cta-button-style px-3 py-0 my-1">
                                         Learn More 
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
                                             <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>

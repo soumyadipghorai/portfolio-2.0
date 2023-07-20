@@ -114,7 +114,7 @@
     }
 }
 
-@media only screen and (max-width: 620px){
+@media only screen and (max-width: 768px){
     .project-section .project-card-container-mobile p, .project-section .project-card-container-mobile button{
         display: none;
         text-align: center;

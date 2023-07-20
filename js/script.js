@@ -1,8 +1,8 @@
 // prealoader --> body 
-// var loader = document.getElementById('preloader'); 
-// window.addEventListener("load", function(){
-//     loader.style.display = "none";
-// })
+var loader = document.getElementById('preloader'); 
+window.addEventListener("load", function(){
+    loader.style.display = "none";
+})
 
 // add breakpoints --> hero section 
 window.addEventListener('load', function(){
@@ -234,3 +234,21 @@ productContainers.forEach((item, i) => {
         item.scrollLeft += (containerWidth+40)*0.99;
     })
 })
+
+// back to top button 
+let mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 2200 || document.documentElement.scrollTop > 2200) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
