@@ -1,3 +1,7 @@
+function runAll(){
+    checkhover();
+}
+
 // prealoader --> body 
 var loader = document.getElementById('preloader'); 
 window.addEventListener("load", function(){
@@ -143,19 +147,19 @@ const speed = 1000;
 
 counters.forEach( counter => {
    const animate = () => {
-      const value = +counter.getAttribute('data-target');
-      const data = +counter.innerText;
-     
-      const time = value / speed;
-     if(data < value) {
-          counter.innerText = Math.ceil(data + time);
-          setTimeout(animate, 1);
-        }else{
-          counter.innerText = value;
+        const value = +counter.getAttribute('data-target');
+        const data = +counter.innerText;
+        
+        const time = value / speed;
+        if(data < value) {
+            counter.innerText = Math.ceil(data + time);
+            setTimeout(animate, 1);
         }
-     
-   }
-   
+        else{
+            counter.innerText = value;
+        }
+    }
+
    animate();
 });
 
@@ -222,7 +226,7 @@ const rightButton = [...document.querySelectorAll('.right-button')];
 
 productContainers.forEach((item, i) => {
     var card = item.getElementsByClassName('testimonial-slider-card'); 
-    console.log(card[0]);
+    // console.log(card[0]);
     let containerDimensions = card[0].getBoundingClientRect();
     let containerWidth = containerDimensions.width;
 
@@ -251,4 +255,34 @@ function scrollFunction() {
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+// hover content update --> about section
+function checkhover(){
+    const subtitle = [
+        "Farewell Backstage hustlers", 
+        "Asutosh Soccer League ‘20", 
+        "Phoktey-dara Trek", 
+        "High School reunion", 
+        "back in my college days ‘19"
+    ]; 
+
+    const paraText = [
+        'During our farewell ceremony for seniors, I took charge backstage. While not performing, managing the event became my role. It felt incredible to contribute to their special day.',
+        "In our college's soccer league, I proudly played my heart out. We secured victory in that match, and I got the chance to assist a goal—a cherished memory on the field!", 
+        'Venturing through the Indo-Nepal border, I unexpectedly encountered a friendly group of Nepali army officers. We shared stories and laughter, making that trek an unforgettable and heartwarming experience.', 
+        'After years apart pursuing higher studies in different cities, a magical evening reunited me with my school friends. Laughter, nostalgia, and cherished bonds made it an unforgettable reunion.', 
+        'During my college days, I took the initiative to create our departmental t-shirt. Armed with determination and a design flair, I embarked on this solo project, and the result was truly rewarding!'
+    ];
+
+    const aboutSection = document.querySelectorAll('.about-section .image-box'); 
+    const story = document.querySelector('.about-section .about-section-description-text .about-section-story');
+    const subtitleText = document.querySelector('.about-section .about-section-description-text .section-subtitle');
+
+    for (let i = 0; i < aboutSection.length; i++){
+        if (aboutSection[i].matches(":hover")){
+            subtitleText.innerHTML = subtitle[i];
+            story.innerHTML = paraText[i];
+        }
+    }
 }
