@@ -22,7 +22,7 @@ function reveal() {
         } else {
         reveals[i].classList.remove("active");
         }
-    }
+    }    
 }
 
 window.addEventListener("scroll", reveal);

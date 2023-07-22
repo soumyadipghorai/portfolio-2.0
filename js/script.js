@@ -14,7 +14,7 @@ window.addEventListener('load', function(){
     const lineBreak = document.getElementById('linebreak'); 
     const space = '&nbsp'; 
     const brk = '<br>';
-    console.log(width);
+    // console.log(width);
 
     if (width > 1310){
         lineBreak.innerHTML = space;
