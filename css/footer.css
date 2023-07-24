@@ -38,3 +38,9 @@
     }
 }
 
+
+@media only screen and (max-width: 575px){
+    .footer-section .left-side, .footer-section .right-side{
+        padding-left: 0px !important;
+    }
+}

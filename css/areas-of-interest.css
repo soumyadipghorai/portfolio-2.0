@@ -25,10 +25,8 @@
 
 .areas-of-interest-section .feature-area .feature{
     box-shadow: -5px 5px black;
-    /* box-shadow: var(--boxShadowStyle1); */
     border: 1px solid var(--secondaryColor3);
     border-radius: var(--borderRadius);
-    /* background: white; */
     color: white;
     background: linear-gradient(120deg, var(--secondaryColor3), rgb(52, 51, 51));
     position: relative;
@@ -40,7 +38,9 @@
 
 .areas-of-interest-section .icon-link{
     text-decoration: none;
-    color: var(--secondaryColor3);
+    color: white;
+    border: 1px solid var(--secondaryColor1);
+    border-radius: 30px;
 }
 
 @media only screen and (max-width: 500px) {        
