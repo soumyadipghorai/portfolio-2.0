@@ -30,21 +30,22 @@
     color: white;
     background: linear-gradient(120deg, var(--secondaryColor3), rgb(52, 51, 51));
     position: relative;
+    text-decoration: none;
 }
-    .areas-of-interest-section .feature-area .feature:hover{
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-        transition: 0.3s linear;
-    }
+
+.areas-of-interest-section .feature .container-link{
+    color: white;
+    text-decoration: none;
+    cursor: auto;
+}
 
 .areas-of-interest-section .icon-link{
-    text-decoration: none;
-    color: white;
-    border: 1px solid var(--secondaryColor1);
     border-radius: 30px;
 }
 
 @media only screen and (max-width: 500px) {        
-    .areas-of-interest-section .feature-area .feature p, .areas-of-interest-section .feature-area .feature a{
+    .areas-of-interest-section .feature-area .container-link p, 
+    .areas-of-interest-section .feature-area .feature .icon-link{
         display: none;
     }
 }

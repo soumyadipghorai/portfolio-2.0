@@ -16,12 +16,9 @@
         display: none;
     }
 
-    .contact-section .full-time-section .get-in-touch-button{
+.contact-section .full-time-section .get-in-touch-button{
     border: 2px solid var(--secondaryColor1);
-    background-color: var(--primaryColor);
     border-radius: 30px; 
-    color: white;
-    text-transform: uppercase;
 }
 
 .contact-section .freelance-section .freelance-card-container{

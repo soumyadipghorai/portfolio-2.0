@@ -55,6 +55,20 @@ body{
         transition: 0.3s linear;
     }
 
+.dark-button-style{
+    background-color: transparent;
+    border: 1px solid var(--secondaryColor1);
+    color: white;
+    background-color: var(--primaryColor);
+    text-decoration: none;
+}
+    .dark-button-style:hover{
+        box-shadow: rgba(21, 214, 3, 0.3) 0px 0px 0px 3px;
+        transition: 0.3s linear;
+        color: white;
+        text-decoration: none;
+    }
+
 * {
     padding: 0;
     margin: 0;

@@ -55,10 +55,7 @@
     }
 
     .project-section .project-card .view-project-button, .project-section .repository-button{
-        background-color: transparent;
-        border: 1px solid var(--secondaryColor1);
         border-radius: 5px;
-        color: white;
     }
 
 /* accordions style starts */

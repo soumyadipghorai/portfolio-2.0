@@ -19,8 +19,6 @@
     text-transform: capitalize;
     border-radius: 30px;
     border: 2px solid var(--secondaryColor1);
-    color: white;
-    background: transparent;
 }
 
 @media only screen and (max-width: 768px){
