@@ -19,6 +19,7 @@
 .contact-section .full-time-section .get-in-touch-button{
     border: 2px solid var(--secondaryColor1);
     border-radius: 30px; 
+    text-transform: uppercase;
 }
 
 .contact-section .freelance-section .freelance-card-container{
